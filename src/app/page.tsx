@@ -30,7 +30,6 @@ export default function Home() {
 
   return (
     <Layout>
-      <h1 className="text-3xl font-bold mb-4">Portfolio</h1>
       <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
