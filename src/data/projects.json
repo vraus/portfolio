@@ -1,0 +1,76 @@
+[
+  {
+    "id": "1",
+    "title": "Steering Lab",
+    "short_description": "AI Movement C++ library with Target and Behaviors control.",
+    "tags": ["Unreal Engine", "C++"],
+    "image": "./images/ue_project.png",
+    "duration": "5 mois",
+    "team_size": 1,
+    "project_type": "cours",
+    "links": {
+      "source_code": "https://github.com/vraus/Steering_Lab",
+      "itch_io": "https://vraus.itch.io/steering-lab",
+      "youtube_demo": "https://youtu.be/2dMmzMgBLvo"
+    },
+    "technologies": ["Unreal Engine 5", "C++", "Blueprints"],
+    "contribution": {
+      "overview": "The Steering Lab project aims to recreate, in C++, the movement of a Pawn in a 3D environment based on a Target and a Behavior. The Pawn has several possible behaviors that can be selected at runtime.",
+      "features": [
+        {
+          "feature": "Seek / Flee / Arrival",
+          "media": null
+        },
+        {
+          "feature": "Pursuit / Evade",
+          "media": null
+        },
+        {
+          "feature": "Paths Behaviors",
+          "media": null
+        },
+        {
+          "feature": "Path Finding",
+          "media": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "title": "Jeu Unity",
+    "short_description": "Un petit jeu réalisé sous Unity.",
+    "tags": ["Unity", "C#"],
+    "image": "./images/unity_project.png",
+    "duration": "2 mois",
+    "team_size": 2,
+    "project_type": "personnel",
+    "links": {
+      "source_code": "https://github.com/jeu-unity",
+      "itch_io": "https://jeu-unity.itch.io",
+      "youtube_demo": "https://www.youtube.com/watch?v=unity-demo"
+    },
+    "technologies": ["Unity", "C#", "URP", "Photon Multiplayer"],
+    "contribution": {
+      "overview": "Développement du système multijoueur et de la gestion des scènes.",
+      "features": [
+        {
+          "feature": "Seek / Flee / Arrival",
+          "media": null
+        },
+        {
+          "feature": "Pursuit / Evade",
+          "media": null
+        },
+        {
+          "feature": "Paths Behaviors",
+          "media": null
+        },
+        {
+          "feature": "Path Finding",
+          "media": null
+        }
+      ]
+    }
+  }
+]
