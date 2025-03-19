@@ -26,12 +26,12 @@ export default function Modal({ project, onClose }: ModalProps) {
             ✖
           </button>
           <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-          <img
+          <Image
             src={project.image}
             alt={project.title}
             className="w-full h-40 object-cover rounded mb-2"
-            // width={500}
-            // height={350}
+            width={800}
+            height={100}
           />
           
           {/* Description courte */}
@@ -91,12 +91,12 @@ export default function Modal({ project, onClose }: ModalProps) {
                 <li key={index} className="mb-2">
                   <div>{feature.feature}</div>
                   {feature.media && (
-                    <img
+                    <Image
                       src={feature.media}
                       alt={`Media for ${feature.feature}`}
                       className="w-full h-40 object-cover rounded mt-2"
-                      // width={500}
-                      // height={350}
+                      width={500}
+                      height={350}
                     />
                   )}
                 </li>
