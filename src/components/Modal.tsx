@@ -86,6 +86,9 @@ export default function Modal({ project, onClose }: ModalProps) {
           <div className="mb-4">
             <p><strong>Contribution:</strong></p>
             <p>{project.contribution.overview}</p>
+          </div>
+          <div className='mb-4'>
+            <p><strong>Features:</strong></p>
             <ul>
               {project.contribution.features.map((feature, index) => (
                 <li key={index} className="mb-2">

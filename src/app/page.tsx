@@ -14,6 +14,7 @@ import FilterButtons from "../components/FilterButtons"
 import ProjectCard from "../components/ProjectCard"
 import Layout from "../components/Layout"
 import Modal from "../components/Modal"
+import Banner from "../components/Banner"
 
 type Project = typeof projectsData[number];
 
@@ -30,6 +31,8 @@ export default function Home() {
 
   return (
     <Layout>
+      <Banner/>
+
       <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
