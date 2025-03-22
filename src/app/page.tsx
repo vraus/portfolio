@@ -41,20 +41,8 @@ export default function Home() {
   const tags = [...new Set(projectsData.flatMap((p) => p.tags))];
 
   return (
-    <div className="container">
-      <Layout>
-        <div className="flex flex-wrap gap-2 mb-4">
-          <button 
-            onClick={toggleTheme} 
-            className="px-4 py-2 rounded bg-blue-500 text-white dark:bg-gray-700 dark:text-white transition"
-            >
-            Toggle Theme
-          </button>
-        </div>
-
-        <Elements />
-
-        <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
+    <Layout>
+      <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {filteredProjects.map((project) => (
