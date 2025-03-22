@@ -56,6 +56,6 @@ export default function Home() {
           <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
         )}
       </Layout>
-      </div>
+      
   );
 }
