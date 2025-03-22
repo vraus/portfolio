@@ -13,10 +13,10 @@ export default function FilterButtons({
         <button
           key={tag}
           onClick={() => setFilter(tag)}
-          className={`px-4 py-2 rounded-lg transition font-semibold ${
+          className={`btn transition ${
             activeFilter === tag
-              ? "bg-blue-500 text-white shadow-md"
-              : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+              ? "btn-secondary text-primary shadow-lg"
+              : "btn-primary text-gray-800"
           }`}
         >
           {tag}

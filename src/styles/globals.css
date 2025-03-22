@@ -1,26 +1,124 @@
 @import "tailwindcss";
 
+/* 🎨 Définition des couleurs et styles globaux */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-background: #DDD0C8; /* Fond principal beige */
+  --color-secondary: #C4B6AD; /* Fond secondaire plus foncé */
+  --color-primary: #323232; /* Gris foncé principal */
+  --color-primary-hover: #454545; /* Gris foncé au survol */
+  --color-accent: #5A5A5A; /* Gris moyen pour les accents */
+  --color-accent-light: #787878; /* Gris clair pour détails */
+  
+  --color-text-primary: #323232; /* Texte principal */
+  --color-text-secondary: #5A5A5A; /* Texte secondaire */
+  --color-text-muted: #787878; /* Texte atténué */
+  
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-strong: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 🌓 Mode sombre */
+.dark {
+  --color-background: #323232;
+  --color-secondary: #454545;
+  --color-primary: #DDD0C8;
+  --color-primary-hover: #E8DCD3;
+  --color-accent: #BFA181;
+  --color-accent-light: #DAC4A6;
+  --color-text-primary: #DDD0C8;
+  --color-text-secondary: #BFA181;
+  --color-text-muted: #A0978E;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 🌍 Arrière-plans */
+.bg-background { background-color: var(--color-background); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-hover { background-color: var(--color-primary-hover); }
+.bg-accent { background-color: var(--color-accent); }
+
+/* 🎭 Textes */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-muted { color: var(--color-text-muted); }
+.text-background { color: var(--color-background); }
+
+/* 🔲 Bordures */
+.border-primary { border-color: var(--color-primary); }
+.border-secondary { border-color: var(--color-secondary); }
+.border-accent { border-color: var(--color-accent); }
+
+/* ✨ Ombres */
+.shadow-soft { box-shadow: var(--shadow-soft); }
+.shadow-strong { box-shadow: var(--shadow-strong); }
+
+/* 🖍 Boutons réutilisables */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-secondary {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent-light);
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Cartes */
+.card {
+  background: var(--color-secondary);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Responsive Grid */
+.grid-cols-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Texts */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-text-secondary);
+}
+
+p {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
 }

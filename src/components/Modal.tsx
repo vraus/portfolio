@@ -16,7 +16,7 @@ export default function Modal({ project, onClose }: ModalProps) {
         onClick={onClose}
       >
         <div
-          className="bg-black p-6 rounded-lg shadow-lg max-w-[90vh] w-full max-h-[80vh] h-auto overflow-y-auto relative"
+          className="bg-secondary p-6 rounded-lg shadow-lg max-w-[90vh] w-full max-h-[80vh] h-auto overflow-y-auto relative"
           onClick={(e) => e.stopPropagation()} // Empêche la fermeture en cliquant à l'intérieur
         >
           <button
@@ -25,7 +25,7 @@ export default function Modal({ project, onClose }: ModalProps) {
           >
             ✖
           </button>
-          <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+          <h2 className="text-primary text-2xl font-bold mb-2">{project.title}</h2>
           <Image
             src={project.image}
             alt={project.title}

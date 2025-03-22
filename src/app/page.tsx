@@ -1,25 +1,37 @@
 'use client';
 
-// Style
 import '../styles/globals.css';
-
-// Libraries
-import { useState } from "react";
-
-// Datas
+import { useState, useEffect } from "react";
 import projectsData from "../data/projects.json";
-
-// Components
 import FilterButtons from "../components/FilterButtons"
 import ProjectCard from "../components/ProjectCard"
 import Layout from "../components/Layout"
 import Modal from "../components/Modal"
+import Elements from '@/components/Elements';
 
 type Project = typeof projectsData[number];
 
 export default function Home() {
   const [filter, setFilter] = useState("All");
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark" ? "dark" : "light";
+    }
+    return "light";
+  });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      document.documentElement.classList.remove("light", "dark");
+      document.documentElement.classList.add(theme);
+      localStorage.setItem("theme", theme);
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
 
   const filteredProjects =
     filter === "All"
@@ -29,21 +41,33 @@ export default function Home() {
   const tags = [...new Set(projectsData.flatMap((p) => p.tags))];
 
   return (
-    <Layout>
-      <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {filteredProjects.map((project) => (
-          <button key={project.id} onClick={() => setSelectedProject(project)}>
-            <ProjectCard project={project} />
+    <div className="container">
+      <Layout>
+        <div className="flex flex-wrap gap-2 mb-4">
+          <button 
+            onClick={toggleTheme} 
+            className="px-4 py-2 rounded bg-blue-500 text-white dark:bg-gray-700 dark:text-white transition"
+            >
+            Toggle Theme
           </button>
-        ))}
-      </div>
+        </div>
 
-      {/* Modal qui s'affiche si un projet est sélectionné */}
-      {selectedProject && (
-        <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
-      )}
-    </Layout>
+        <Elements />
+
+        <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {filteredProjects.map((project) => (
+            <button key={project.id} onClick={() => setSelectedProject(project)}>
+              <ProjectCard project={project} />
+            </button>
+          ))}
+        </div>
+
+        {selectedProject && (
+          <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
+        )}
+      </Layout>
+      </div>
   );
 }
