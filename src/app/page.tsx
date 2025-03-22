@@ -42,6 +42,15 @@ export default function Home() {
 
   return (
     <Layout>
+
+      <Elements />
+
+      <div>
+        <button onClick={toggleTheme} className="absolute top-4 right-4 p-2 bg-blue-500 text-white rounded-full">
+          Toggle Theme
+        </button>
+      </div>
+
       <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
