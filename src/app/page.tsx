@@ -6,32 +6,19 @@ import Layout from "../components/Layout"
 import Educations from "../components/Educations"
 import Projects from "@/components/Projects";
 import TechnicalExperience from "@/components/Technical";
+import ThemeToggleButton from "@/components/ThemeToggleButton";
 
 
 
 export default function Home() {
-  /*const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "dark" ? "dark" : "light";
-    }
-    return "light";
-  });*/
-
-  /*useEffect(() => {
-    if (typeof window !== "undefined") {
-      document.documentElement.classList.remove("light", "dark");
-      document.documentElement.classList.add(theme);
-      localStorage.setItem("theme", theme);
-    }
-  }, [theme]);*/
-
-  /*const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };*/
 
   return (
     <div className="container">
       <Layout>
+
+        <div className="absolute top-4 right-4">
+          <ThemeToggleButton />
+        </div>
 
         <div className="mb-4">
           <TechnicalExperience />

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import projectsData from "../data/projects.json";
+import React from "react";
 
 type Project = (typeof projectsData)["projects"][number];
 
@@ -35,7 +36,7 @@ const LinkPreview = ({ url }: { url: string }) => {
 export default function Modal({ project, onClose }: ModalProps) {
   return (
     <div
-      className="fixed inset-0 flex justify-center items-center z-50 bg-opacity-50 backdrop-blur-md"
+      className="fixed inset-0 flex justify-center items-center z-50 backdrop-blur-md"
       onClick={onClose}
     >
       <motion.div
@@ -43,12 +44,12 @@ export default function Modal({ project, onClose }: ModalProps) {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
-        className="bg-secondary p-6 rounded-2xl shadow-lg max-w-2xl w-full max-h-[85vh] overflow-y-auto relative"
+        className="shadow-lg max-h-[95vh] overflow-y-auto relative modal-content"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Bouton de fermeture */}
         <button
-          className="absolute top-4 right-4 text-gray-600 hover:text-black cursor-pointer"
+          className="bg-background absolute top-4 right-4 text-gray-600 hover:text-black cursor-pointer"
           onClick={onClose}
         >
           ✖
@@ -60,22 +61,33 @@ export default function Modal({ project, onClose }: ModalProps) {
           <Image
             src={project.image}
             alt={project.title}
-            className="w-full h-48 object-cover rounded-xl mb-4"
-            width={800}
-            height={300}
+            className="w-full object-cover mb-4"
+            width={1910}
+            height={1080}
             />
           {/* Description courte */}
-          <p className="text-secondary mb-4">{project.short_description}</p>
+
         </section>
 
         {/* Détails du projet */}
-        <section className="container">
-          <h2>Informations</h2>
-          <ul className="space-y-2 text-secondary">
-            <li><strong className="text-primary">Duration :</strong> {project.duration}</li>
-            <li><strong className="text-primary">Team Size :</strong> {project.team_size} personnes</li>
-            <li><strong className="text-primary">Type :</strong> {project.project_type}</li>
-          </ul>
+        <section className="container my-8">
+          <div className="grid-cols-responsive">
+
+            <div className="card">
+              <h3 className="text-primary">About</h3>
+              <p className="text-primary mb-4">{project.short_description}</p>
+            </div>
+
+            <div className="card">
+              <h3 className="text-primary">Project Infos</h3>
+              <ul className="space-y-2 text-primary">
+                <li><strong className="text-primary">Duration :</strong> {project.duration}</li>
+                <li><strong className="text-primary">Team Size :</strong> {project.team_size} personnes</li>
+                <li><strong className="text-primary">Type :</strong> {project.project_type}</li>
+              </ul>
+            </div>
+
+          </div>
         </section>
 
         {/* Liens */}

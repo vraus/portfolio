@@ -15,8 +15,8 @@ export default function FilterButtons({
           onClick={() => setFilter(tag)}
           className={`btn transition ${
             activeFilter === tag
-              ? "btn-secondary text-primary shadow-lg"
-              : "btn-primary text-gray-800"
+              ? "btn-primary text-primary shadow-lg"
+              : "btn-secondary text-gray-800"
           }`}
         >
           {tag}
