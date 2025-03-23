@@ -9,7 +9,7 @@ import Layout from "../components/Layout"
 import Modal from "../components/Modal"
 import Elements from '@/components/Elements';
 
-type Project = typeof projectsData[number];
+type Project = (typeof projectsData)["projects"][number];
 
 export default function Home() {
   const [filter, setFilter] = useState("All");
