@@ -9,7 +9,7 @@ import Layout from "../components/Layout"
 import Modal from "../components/Modal"
 import Elements from '@/components/Elements';
 
-type Project = typeof projectsData[number];
+type Project = (typeof projectsData)["projects"][number];
 
 export default function Home() {
   const [filter, setFilter] = useState("All");
@@ -34,37 +34,36 @@ export default function Home() {
   };
 
   const filteredProjects =
-    filter === "All"
-      ? projectsData
-      : projectsData.filter((p) => p.tags.includes(filter));
+  filter === "All"
+    ? projectsData.projects
+    : projectsData.projects.filter((p) => p.tags.includes(filter));
 
-  const tags = [...new Set(projectsData.flatMap((p) => p.tags))];
+    const tags = [...new Set(projectsData.projects.flatMap((p) => p.tags))];
 
   return (
+    <div className="container">
     <Layout>
 
-      <Elements />
-
       <div>
-        <button onClick={toggleTheme} className="absolute top-4 right-4 p-2 bg-blue-500 text-white rounded-full">
+        <button onClick={toggleTheme} className="absolute top-4 right-4 btn btn-primary">
           Toggle Theme
         </button>
       </div>
 
       <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {filteredProjects.map((project) => (
-            <button key={project.id} onClick={() => setSelectedProject(project)}>
-              <ProjectCard project={project} />
-            </button>
-          ))}
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {filteredProjects.map((project) => (
+              <button key={project.id} onClick={() => setSelectedProject(project)}>
+                <ProjectCard project={project} />
+              </button>
+            ))}
+          </div>
 
-        {selectedProject && (
-          <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
-        )}
+          {selectedProject && (
+            <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
+          )}
       </Layout>
-      
+    </div>
   );
 }

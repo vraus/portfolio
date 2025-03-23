@@ -1,7 +1,7 @@
 import Image from "next/image";
 import projectsData from "../data/projects.json";
 
-type Project = typeof projectsData[number];
+type Project = (typeof projectsData)["projects"][number];
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
