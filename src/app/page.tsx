@@ -7,7 +7,6 @@ import FilterButtons from "../components/FilterButtons"
 import ProjectCard from "../components/ProjectCard"
 import Layout from "../components/Layout"
 import Modal from "../components/Modal"
-import Elements from '@/components/Elements';
 
 type Project = (typeof projectsData)["projects"][number];
 
