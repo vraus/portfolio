@@ -72,15 +72,15 @@ export default function Modal({ project, onClose }: ModalProps) {
         <section className="container">
           <h2>Informations</h2>
           <ul className="space-y-2 text-secondary">
-            <li><strong className="text-primary">Durée :</strong> {project.duration}</li>
-            <li><strong className="text-primary">Équipe :</strong> {project.team_size} personnes</li>
+            <li><strong className="text-primary">Duration :</strong> {project.duration}</li>
+            <li><strong className="text-primary">Team Size :</strong> {project.team_size} personnes</li>
             <li><strong className="text-primary">Type :</strong> {project.project_type}</li>
           </ul>
         </section>
 
         {/* Liens */}
         <section className="container">
-          <h2>Liens :</h2>
+          <h2>Links :</h2>
           <ul className="space-y-2">
             {project.links.source_code && <li><LinkPreview url={project.links.source_code} /></li>}
             {project.links.itch_io && <li><LinkPreview url={project.links.itch_io} /></li>}
@@ -91,7 +91,7 @@ export default function Modal({ project, onClose }: ModalProps) {
         {/* Technologies */}
         <section className="container">
           <div className="mb-4">
-            <h2 className="font-semibold">Technologies utilisées :</h2>
+            <h2 className="font-semibold">Used Technologies :</h2>
             <div className="flex flex-wrap gap-2 mt-2">
               {project.technologies.languages.map((lang, index) => (
                 <span key={index} className="px-3 py-1 text-sm bg-gray-200 rounded-lg">
@@ -116,7 +116,7 @@ export default function Modal({ project, onClose }: ModalProps) {
 
           {/* Fonctionnalités */}
           <div className="mb-4">
-            <h3 className="font-semibold">Fonctionnalités développées :</h3>
+            <h3 className="font-semibold">Developped Features :</h3>
             <ul className="list-disc pl-5 mt-2">
               {project.features.map((feature, index) => (
                 <li key={index} className="mb-3">
