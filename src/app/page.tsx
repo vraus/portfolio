@@ -34,28 +34,29 @@ export default function Home() {
   };
 
   const filteredProjects =
-    filter === "All"
-      ? projectsData
-      : projectsData.filter((p) => p.tags.includes(filter));
+  filter === "All"
+    ? projectsData.projects
+    : projectsData.projects.filter((p) => p.tags.includes(filter));
 
-  const tags = [...new Set(projectsData.flatMap((p) => p.tags))];
+    const tags = [...new Set(projectsData.projects.flatMap((p) => p.tags))];
 
   return (
-    <Layout>
-      <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
+    <div className="container">
+      <Layout>
+        <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {filteredProjects.map((project) => (
-            <button key={project.id} onClick={() => setSelectedProject(project)}>
-              <ProjectCard project={project} />
-            </button>
-          ))}
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {filteredProjects.map((project) => (
+              <button key={project.id} onClick={() => setSelectedProject(project)}>
+                <ProjectCard project={project} />
+              </button>
+            ))}
+          </div>
 
-        {selectedProject && (
-          <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
-        )}
+          {selectedProject && (
+            <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
+          )}
       </Layout>
-      
+    </div>
   );
 }

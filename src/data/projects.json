@@ -2,17 +2,17 @@
   "projects": [
     {
       "id": "1",
-      "tags": ["C++", "Unreal Engine", "Blueprints", "Outil 1", "Outil 2"],
-      "title": "Nom du Projet",
-      "image": "chemin/vers/image.png",
+      "tags": ["C++", "Unreal Engine"],
+      "title": "Steering Lab",
+      "image": "/images/steering_lab.png",
       "short_description": "Brève description du projet, en une phrase impactante.",
       "duration": "X mois",
       "team_size": "X personnes",
       "project_type": "Projet de cours / Personnel / Game Jam / Autre",
       "links": {
-        "source_code": "https://github.com/...",
-        "itch_io": "https://...",
-        "youtube": "https://..."
+        "source_code": "https://github.com/vraus/Steering_Lab",
+        "itch_io": "https://vraus.itch.io/steering-lab",
+        "youtube": "https://www.youtube.com/watch?v=2dMmzMgBLvo"
       },
       "technologies": {
         "engine": "Unreal Engine / Unity / Autre",
@@ -25,12 +25,12 @@
         {
           "name": "Nom de la fonctionnalité",
           "description": "Brève explication",
-          "media": "chemin/vers/media.png"
+          "media": null
         },
         {
           "name": "Nom de la fonctionnalité 2",
           "description": "Brève explication",
-          "media": "chemin/vers/media.gif"
+          "media": null
         }
       ],
       "key_points": [
@@ -40,18 +40,18 @@
       ]
     },
     {
-      "id": "1",
+      "id": "2",
       "title": "Nom du Projet",
-      "tags": ["C++", "Unreal Engine", "Blueprints", "Outil 1", "Outil 2"],
-      "image": "chemin/vers/image.png",
+      "tags": ["C#", "Unity"],
+      "image": "/images/unity_project.png",
       "short_description": "Brève description du projet, en une phrase impactante.",
       "duration": "X mois",
       "team_size": "X personnes",
       "project_type": "Projet de cours / Personnel / Game Jam / Autre",
       "links": {
-        "source_code": "https://github.com/...",
-        "itch_io": "https://...",
-        "youtube": "https://..."
+        "source_code": "https://github.com/vraus/Steering_Lab",
+        "itch_io": "https://vraus.itch.io/steering-lab",
+        "youtube": "https://www.youtube.com/watch?v=2dMmzMgBLvo"
       },
       "technologies": {
         "engine": "Unreal Engine / Unity / Autre",
@@ -64,12 +64,12 @@
         {
           "name": "Nom de la fonctionnalité",
           "description": "Brève explication",
-          "media": "chemin/vers/media.png"
+          "media": null
         },
         {
           "name": "Nom de la fonctionnalité 2",
           "description": "Brève explication",
-          "media": "chemin/vers/media.gif"
+          "media": null
         }
       ],
       "key_points": [
