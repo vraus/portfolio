@@ -44,7 +44,7 @@ export default function Modal({ project, onClose }: ModalProps) {
         exit={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
         className="bg-secondary p-6 rounded-2xl shadow-lg max-w-2xl w-full max-h-[85vh] overflow-y-auto relative"
-        onClick={(e) => e.stopPropagation()} // Empêche la fermeture en cliquant à l'intérieur
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Bouton de fermeture */}
         <button

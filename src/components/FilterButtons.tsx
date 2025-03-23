@@ -8,7 +8,7 @@ export default function FilterButtons({
   setFilter: (tag: string) => void;
 }) {
   return (
-    <div className="flex flex-wrap gap-2 mb-4">
+    <div className="flex flex-wrap gap-2">
       {["All", ...tags].map((tag) => (
         <button
           key={tag}

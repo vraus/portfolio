@@ -4,17 +4,28 @@ import projectsData from "../data/projects.json";
 type Project = (typeof projectsData)["projects"][number];
 
 export default function ProjectCard({ project }: { project: Project }) {
-  return (
-    <div className="bg-secondary rounded-lg p-4 shadow-soft hover:shadow-strong transition-all cursor-pointer">
-      <Image
-        src={project.image}
-        alt={project.title}
-        className="w-full h-48 object-cover rounded"
-        width={600}
-        height={200}
-        aria-hidden="true"
-      />
-      <h2 className="text-secondary text-xl font-semibold mt-2">{project.title}</h2>
-    </div>
-  );
+    return (
+        <div className="bg-secondary shadow-soft hover:shadow-strong transition-all cursor-pointer">
+            <div className="relative">
+                <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-100 object-cover"
+                    width={600}
+                    height={100}
+                    aria-hidden="true"
+                />
+                <div className="absolute bottom-0 w-full bg-opacity-50 bg-black p-2 text-primary flex justify-between items-center">
+                    <span>{project.team_size}</span>
+                    <span>{project.duration}</span>
+                    <span>{project.language}</span>
+                </div>
+            </div>
+            <div className="p-4 text-justify">
+                <h2>{project.title} - {project.date}</h2>
+                <h3 className="mb-2">{project.role}</h3>
+                <p className="text-secondary">{project.short_description}</p>
+            </div>
+        </div>
+    );
 }

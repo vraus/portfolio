@@ -83,6 +83,19 @@
   background-color: var(--color-accent-light);
 }
 
+.tech-tag{
+  text-align: center;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  border-width: 1px;
+}
+
 .link-primary {
   background-color : var(--color-background);
 }

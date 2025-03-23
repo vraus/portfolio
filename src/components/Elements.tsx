@@ -29,7 +29,7 @@ export default function Elements(){
           </div>
           <div className="card">
             <h2 className="text-primary">Carte 3</h2>
-            <p className="text-muted">Description de la carte 3. L aspect de la carte s ajuste en fonction des styles globaux définis dans le CSS.</p>
+            <p className="text-muted">Description de la carte 3. L&apos;aspect de la carte s&apos;ajuste en fonction des styles globaux définis dans le CSS.</p>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function Elements(){
         <div className="grid-cols-responsive">
           <div className="bg-primary p-4 rounded-lg shadow-soft">
             <h2 className="text-background">Élément Responsive 1</h2>
-            <p className="text-background">Ce bloc s adapte à la taille de l écran grâce à la grille responsive.</p>
+            <p className="text-background">Ce bloc s&apos;adapte à la taille de l&apos;écran grâce à la grille responsive.</p>
           </div>
           <div className="bg-primary p-4 rounded-lg shadow-soft">
             <h2 className="text-background">Élément Responsive 2</h2>
