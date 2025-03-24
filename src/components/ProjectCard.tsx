@@ -14,6 +14,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     width={600}
                     height={100}
                     aria-hidden="true"
+                    unoptimized={true}
                 />
                 <div className="absolute bottom-0 w-full bg-opacity-50 p-2 flex justify-between items-center additional-info text-primary ">
                     <span>{project.team_size}</span>

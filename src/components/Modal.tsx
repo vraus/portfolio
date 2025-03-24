@@ -79,6 +79,7 @@ export default function Modal({ project, onClose }: ModalProps) {
             className="w-full object-cover mb-4"
             width={1910}
             height={1080}
+            unoptimized={true}
             />
           {/* Description courte */}
 
@@ -170,6 +171,7 @@ export default function Modal({ project, onClose }: ModalProps) {
                       className="w-80 h-80 object-cover rounded mt-2 cursor-pointer"
                       width={160}
                       height={160}
+                      unoptimized={true}
                     />
                   )}
                 </li>
