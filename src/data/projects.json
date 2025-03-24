@@ -31,22 +31,22 @@
         {
           "name": "Seek / Flee / Arrival",
           "description": "Moving toward and away from a Target without anticipation for stop, and Arrival stops the agent upon reaching the destination point.",
-          "media": "./gifs/SteeringLab/SeekFleeArrival.gif"
+          "media": "/gifs/SteeringLab/SeekFleeArrival.gif"
         },
         {
           "name": "Pursuit / Evade",
           "description": "Brève explication",
-          "media": "./gifs/SteeringLab/PursuitEvade.gif"
+          "media": "/gifs/SteeringLab/PursuitEvade.gif"
         },
         {
           "name": "Paths Behaviors",
           "description": "Brève explication",
-          "media": "./gifs/SteeringLab/PathMode.gif"
+          "media": "/gifs/SteeringLab/PathMode.gif"
         },
         {
           "name": "Path Finding / Avoidance",
           "description": "Brève explication",
-          "media": "./gifs/SteeringLab/PathFinding.gif"
+          "media": "/gifs/SteeringLab/PathFinding.gif"
         },
         {
           "name": "Planner",
