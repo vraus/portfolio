@@ -130,12 +130,12 @@
 }
 
 .link-primary {
-  background-color: var(--color-secondary);
+  background-color: var(--color-background-alt);
   color: var(--color-text-inverted);
 }
 
 .link-primary:hover {
-  background-color: var(--color-secondary-hover);
+  background-color: var(--color-border);
 }
 
 /* Layout */

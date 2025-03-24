@@ -4,34 +4,52 @@
       "id": "1",
       "tags": ["C++", "Unreal Engine"],
       "title": "Steering Lab",
-      "image": "/images/steering_lab.png",
+      "image": "/gifs/SteeringLab/SeekFleeArrival.gif",
       "short_description": "Course project about AI in Games. Using C++ in Unreal, reproducing the steering of a controlled Pawn in Unreal Engine.",
       "duration": "5 mois",
       "team_size": "1 personne",
       "language": "Unreal / C++",
       "date": "2025",
       "role": "Game Programmer",
-      "project_type": "Projet de cours",
+      "project_type": "Course Project",
       "links": {
         "source_code": "https://github.com/vraus/Steering_Lab",
         "itch_io": "https://vraus.itch.io/steering-lab",
-        "youtube": "https://www.youtube.com/watch?v=2dMmzMgBLvo"
+        "youtube": [
+          "https://www.youtube.com/watch?v=2dMmzMgBLvo",
+          "https://youtu.be/HNnz6hbwzCo"
+        ]
       },
       "technologies": {
         "engine": "Unreal Engine",
         "languages": ["C++", "Blueprints"],
         "tools": ["JetBrains Rider", "GitHub"]
       },
-      "description": "Résumé du projet : objectif, contexte, et ce qui le rend intéressant.",
-      "contributions": "Explication de mon rôle dans le projet, les décisions techniques prises et les challenges surmontés.",
+      "description": "The Steering Lab project aims to recreate, in C++, the movement of a Pawn in a 3D environment based on a Target and a Behavior.The Pawn has several possible behaviors that can be selected at runtime, described in the features section.",
+      "contributions": "As a solo project, I made alone all the features for this Lab.",
       "features": [
         {
-          "name": "Nom de la fonctionnalité",
-          "description": "Brève explication",
-          "media": null
+          "name": "Seek / Flee / Arrival",
+          "description": "Moving toward and away from a Target without anticipation for stop, and Arrival stops the agent upon reaching the destination point.",
+          "media": "/gifs/SteeringLab/SeekFleeArrival.gif"
         },
         {
-          "name": "Nom de la fonctionnalité 2",
+          "name": "Pursuit / Evade",
+          "description": "Brève explication",
+          "media": "/gifs/SteeringLab/PursuitEvade.gif"
+        },
+        {
+          "name": "Paths Behaviors",
+          "description": "Brève explication",
+          "media": "/gifs/SteeringLab/PathMode.gif"
+        },
+        {
+          "name": "Path Finding / Avoidance",
+          "description": "Brève explication",
+          "media": "/gifs/SteeringLab/PathFinding.gif"
+        },
+        {
+          "name": "Planner",
           "description": "Brève explication",
           "media": null
         }
@@ -57,7 +75,7 @@
       "links": {
         "source_code": "https://github.com/vraus/Steering_Lab",
         "itch_io": "https://vraus.itch.io/steering-lab",
-        "youtube": "https://www.youtube.com/watch?v=2dMmzMgBLvo"
+        "youtube": ["https://www.youtube.com/watch?v=2dMmzMgBLvo"]
       },
       "technologies": {
         "engine": "Unreal Engine / Unity / Autre",
