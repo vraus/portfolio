@@ -170,14 +170,17 @@ export default function Modal({ project, onClose }: ModalProps) {
                       <p className="text-primary font-semibold">{feature.name}</p>
                       <p className="text-secondary">{feature.description}</p>
                       {feature.media && (
-                        <Image
-                        src={feature.media}
-                        alt={`Illustration ${feature.name}`}
-                        className="w-80 h-80 object-cover rounded mt-2 cursor-pointer"
-                        width={160}
-                        height={160}
-                        unoptimized={true}
-                        />
+                        <div>
+                          <Image
+                          src={feature.media}
+                          alt={`Illustration ${feature.name}`}
+                          className="w-80 h-80 object-cover rounded mt-2 cursor-pointer"
+                          width={160}
+                          height={160}
+                          unoptimized={true}
+                          />
+                          <img src={feature.media} alt={feature.name} className="w-80 h-80 object-cover rounded mt-2 cursor-pointer" width={160} height={160} aria-hidden="true" />
+                        </div>
                       )}
                     </li>
                   ))}
