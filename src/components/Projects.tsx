@@ -1,5 +1,5 @@
 import FilterButtons from "@/components/FilterButtons";
-import {useState} from "react";
+import { useState, useEffect } from "react";
 import projectsData from "@/data/projects.json";
 import ProjectCard from "@/components/ProjectCard";
 import Modal from "@/components/Modal";
@@ -17,12 +17,24 @@ export default function Projects() {
 
     const tags = [...new Set(projectsData.projects.flatMap((p) => p.tags))];
 
+    useEffect(() => {
+        if (selectedProject) {
+            document.body.style.overflow = "hidden"; // Scroll is blocked when modal is open
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        return () => {
+            document.body.style.overflow = "auto";
+        }
+    }, [selectedProject])
+
     return(
         <div>
             <h1 className="mb-4">Projects</h1>
             <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mt-4">
                 {filteredProjects.map((project) => (
                     <button key={project.id} onClick={() => setSelectedProject(project)}>
                         <ProjectCard project={project} />

@@ -7,6 +7,7 @@ import Educations from "../components/Educations"
 import Projects from "@/components/Projects";
 import TechnicalExperience from "@/components/Technical";
 import ThemeToggleButton from "@/components/ThemeToggleButton";
+import Links from "@/components/Links";
 
 
 
@@ -18,6 +19,10 @@ export default function Home() {
 
         <div className="absolute top-4 right-4">
           <ThemeToggleButton />
+        </div>
+
+        <div className="mb-4">
+          <Links />
         </div>
 
         <div className="mb-4">
