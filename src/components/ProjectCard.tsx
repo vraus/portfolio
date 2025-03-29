@@ -16,6 +16,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     aria-hidden="true"
                     unoptimized={true}
                 />
+                <img src={project.image} alt={project.title} className="w-full h-100 object-cover" width={600} height={100} aria-hidden="true" />
                 <div className="absolute bottom-0 w-full bg-opacity-50 p-2 flex justify-between items-center  text-white additional-info">
                     <span>{project.team_size}</span>
                     <span>{project.duration}</span>
