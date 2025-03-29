@@ -51,7 +51,7 @@ const LinkPreview = ({ url, url_name }: { url: string; url_name : string }) => {
 export default function Modal({ project, onClose }: ModalProps) {
   return (
     <div
-      className="fixed inset-0 flex justify-center items-center z-50 backdrop-blur-md"
+      className="fixed inset-0 flex justify-center items-center z-50 backdrop-blur-md text-justify"
       onClick={onClose}
     >
       <motion.div
@@ -79,6 +79,7 @@ export default function Modal({ project, onClose }: ModalProps) {
             className="w-full object-cover mb-4"
             width={1910}
             height={1080}
+            unoptimized={true}
             />
           {/* Description courte */}
 
@@ -145,50 +146,59 @@ export default function Modal({ project, onClose }: ModalProps) {
         {/* Description */}
         <section className="container">
           <h2>Description :</h2>
-          <p className="">{project.description}</p>
+          <div>
+            {project.description.map((desc, index) => (
+              <p key={index} className="text-secondary mb-2">{desc}</p>
+            ))}
+          </div>
         </section>
 
         {/* Contribution */}
-        <section className="container">
-          <div className="mb-4">
-            <h2 className="font-semibold">Contributions :</h2>
-            <p className="text-gray-700 mt-2">{project.contributions}</p>
-          </div>
+        {project.features.length > 0 && 
+          <section className="container">
+            <div className="mb-4">
+              <h2 className="font-semibold">Contributions :</h2>
+              <p className="text-gray-700 mt-2">{project.contributions}</p>
+            </div>
 
-          {/* Fonctionnalités */}
+            {/* Fonctionnalités */}
+              <div className="mb-4">
+                <h3 className="font-semibold">Features :</h3>
+                <ul className="list-disc pl-5 mt-2">
+                  {project.features.map((feature, index) => (
+                    <li key={index} className="mb-15">
+                      <p className="text-primary font-semibold">{feature.name}</p>
+                      <p className="text-secondary">{feature.description}</p>
+                      {feature.media && (
+                        <Image
+                        src={feature.media}
+                        alt={`Illustration ${feature.name}`}
+                        className="w-80 h-80 object-cover rounded mt-2 cursor-pointer"
+                        width={160}
+                        height={160}
+                        unoptimized={true}
+                        />
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+          </section>
+        }
+
+        {/* Points Clés */}
+        { project.key_points.length > 0 &&
+          <section className="container">
           <div className="mb-4">
-            <h3 className="font-semibold">Features :</h3>
-            <ul className="list-disc pl-5 mt-2">
-              {project.features.map((feature, index) => (
-                <li key={index} className="mb-15">
-                  <p className="text-primary font-semibold">{feature.name}</p>
-                  <p className="text-secondary">{feature.description}</p>
-                  {feature.media && (
-                    <Image
-                      src={feature.media}
-                      alt={`Illustration ${feature.name}`}
-                      className="w-80 h-80 object-cover rounded mt-2 cursor-pointer"
-                      width={160}
-                      height={160}
-                    />
-                  )}
-                </li>
+            <h2 className="font-semibold text-primary">What I learned in this project :</h2>
+            <ul className="list-disc pl-5 mt-2 text-secondary">
+              {project.key_points.map((point, index) => (
+                <li key={index}><p>{point}</p></li>
               ))}
             </ul>
           </div>
-        </section>
-
-        {/* Points Clés */}
-        <section className="container">
-        <div className="mb-4">
-          <h2 className="font-semibold text-primary">Key Points :</h2>
-          <ul className="list-disc pl-5 mt-2 text-secondary">
-            {project.key_points.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
-          </ul>
-        </div>
-        </section>
+          </section>
+        }
       </motion.div>
     </div>
   );

@@ -5,12 +5,12 @@
       "tags": ["C++", "Unreal Engine"],
       "title": "Steering Lab",
       "image": "/gifs/SteeringLab/SeekFleeArrival.gif",
-      "short_description": "Course project about AI in Games. Using C++ in Unreal, reproducing the steering of a controlled Pawn in Unreal Engine.",
-      "duration": "5 mois",
-      "team_size": "1 personne",
+      "short_description": "Course project about AI in Games. Using C++ in Unreal, reproducing the steering of a controlled Pawn.",
+      "duration": "5 months",
+      "team_size": "1 developer",
       "language": "Unreal / C++",
       "date": "2025",
-      "role": "Game Programmer",
+      "role": "Game Developper",
       "project_type": "Course Project",
       "links": {
         "source_code": "https://github.com/vraus/Steering_Lab",
@@ -22,10 +22,9 @@
       },
       "technologies": {
         "engine": "Unreal Engine",
-        "languages": ["C++", "Blueprints"],
-        "tools": ["JetBrains Rider", "GitHub"]
+        "languages": ["C++", "Blueprints"]
       },
-      "description": "The Steering Lab project aims to recreate, in C++, the movement of a Pawn in a 3D environment based on a Target and a Behavior.The Pawn has several possible behaviors that can be selected at runtime, described in the features section.",
+      "description": ["The Steering Lab project aims to recreate, in C++, the movement of a Pawn in a 3D environment based on a Target and a Behavior.The Pawn has several possible behaviors that can be selected at runtime, described in the features section."],
       "contributions": "As a solo project, I made alone all the features for this Lab.",
       "features": [
         {
@@ -54,52 +53,173 @@
           "media": null
         }
       ],
-      "key_points": [
-        "Point fort du projet 1",
-        "Point fort du projet 2",
-        "Point fort du projet 3"
-      ]
+      "key_points": []
     },
     {
       "id": "2",
-      "title": "Nom du Projet",
+      "title": "Chev's Quest",
       "tags": ["C#", "Unity"],
-      "image": "/images/unity_project.png",
-      "short_description": "Brève description du projet, en une phrase impactante. Enfin au moins deux phrases pour avoir deux lignes.",
-      "duration": "X mois",
-      "team_size": "X personnes",
-      "language": "Unreal / C++",
-      "date": "2025",
-      "role": "Game Programmer",
-      "project_type": "Projet de cours / Personnel / Game Jam / Autre",
+      "image": "/images/chevs_quest.png",
+      "short_description": "A tiny Point & Click adventure taking place in European medieval eras, with various videogame references.",
+      "duration": "3 months",
+      "team_size": "1 developer",
+      "language": "Unity / C#",
+      "date": "2024",
+      "role": "Game Developper",
+      "project_type": "Personnal Project",
       "links": {
-        "source_code": "https://github.com/vraus/Steering_Lab",
-        "itch_io": "https://vraus.itch.io/steering-lab",
-        "youtube": ["https://www.youtube.com/watch?v=2dMmzMgBLvo"]
+        "source_code": "https://github.com/vraus/Chevs_Quest",
+        "itch_io": "https://vraus.itch.io/chevs-quest",
+        "youtube": ["https://youtu.be/VEuXIyEDj_0"]
       },
       "technologies": {
-        "engine": "Unreal Engine / Unity / Autre",
-        "languages": ["C++", "Blueprints"],
-        "tools": ["Outil 1", "Outil 2"]
+        "engine": "Unity",
+        "languages": ["C#", "Ink Plugin"]
       },
-      "description": "Résumé du projet : objectif, contexte, et ce qui le rend intéressant.",
-      "contributions": "Explication de mon rôle dans le projet, les décisions techniques prises et les challenges surmontés.",
+      "description": ["I  originally wrote the story of this game as a gift. I chose a 2D pixel art graphic style because I really enjoy these atmospheres and it gives the simplistic homemade feel I was looking for in the first chapter of this character's adventures"],
+      "contributions": "I developed the entire game in Unity using the Ink plugin for managing character dialogues. I also made it a point to ensure a pleasant and consistent soundscape. My main reference for the music was Divinity Original Sin 2. And where there is music, there are also sound effects and ambiance. I added all the sounds I deemed relevant, as well as a menu to manage the different volume levels.",
       "features": [
         {
-          "name": "Nom de la fonctionnalité",
-          "description": "Brève explication",
-          "media": null
+          "name": "Dialogues",
+          "description": "Character dialogues using the Ink Plugin in Unity.",
+          "media": "/images/comming_soon.webp"
         },
         {
-          "name": "Nom de la fonctionnalité 2",
-          "description": "Brève explication",
-          "media": null
+          "name": "Sound Design",
+          "description": "Using built-in sound management in Unity. Background music, sound effects, and ambiance. Plus a menu to manage the volume levels.",
+          "media": "/images/comming_soon.webp"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "id": "3",
+      "title": "Wwisard",
+      "tags": ["C++", "Unreal Engine"],
+      "image": "/images/wwisard.jpg",
+      "short_description": "Single-Player Mini-FPS as a first approach to WWise integration in Unreal Engine 5 and Sound Programmation.",
+      "duration": "3 months",
+      "team_size": "1 developer",
+      "language": "Unreal / C++",
+      "date": "2024",
+      "role": "Game Developper",
+      "project_type": "Personnal Project",
+      "links": {
+        "source_code": "https://github.com/vraus/Wwisard",
+        "itch_io": null,
+        "youtube": ["https://youtu.be/03hS-5pdrZ8"]
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["C++", "Blueprints", "Wwise"]
+      },
+      "description": ["I recently discovered how to integrate sounds dynamically and link them to gameplay using Wwise, and I wanted to practice with a simple gameplay project where I could experiment with the parameters and possibilities offered by this software. Since that project, I’ve been integrating Wwise into my other projects to plan audio programming, and I find this software very comprehensive and enjoyable to work with. The integration with Unreal is quite straightforward and well-documented."],
+      "contributions": "These features reflects what I learned doing this project.",
+      "features": [],
+      "key_points": [
+        "Wwise integration in Unreal Engine 5",
+        "Basic Sound Programmation",
+        "Exploring Immersive Sound",
+        "Having fun with Sound Design and Programming"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Red Pandas",
+      "tags": ["C++", "Unreal Engine"],
+      "image": "/images/the_red_pandas.webp",
+      "short_description": "Course project of Massively Multiplayer Online Role Play Game (MMORPG) prototype using Unreal and C++.",
+      "duration": "Ongoing project",
+      "team_size": "2 developers",
+      "language": "Unreal / C++",
+      "date": "2024",
+      "role": "Game Developper",
+      "project_type": "Course Project",
+      "links": {
+        "source_code": null,
+        "itch_io": null,
+        "youtube": []
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["C++", "Blueprints", "Perforce"]
+      },
+      "description": ["Collaborative Project in Pairs, prototyping an MMORPG with Classic Core MMO Mechanics such as Combat and Health system, Level progression and abilities to unlock, Inventory and equipment management, Dialogue and quest systems, Monster aggression zones"],
+      "contributions": "This project is very comprehensive and has allowed me to work on multiple aspects of developing a large-scale game while considering its networking components and scalability. My first contribution to this project was to integrate the versioning using Perforce, including the setup of a server to host the Perforce Server. To date, I have worked on the following features.",
+      "features": [
+        {
+          "name": "Combat System",
+          "description": "With Character Health and attacks components, Punch Animation and damage hitbox, Damage type and reaction type control with data structure. I also made sur it was and easy-to-attach to new characters as it's a component-based system.",
+          "media": "/images/comming_soon.webp"
+        },
+        {
+          "name": "Dialogue System",
+          "description": "Player interaction with NPCs, using a data structure to manage the dialogues and the possible answers. I also made sure it was easy to add new dialogues to NPCs also using a component-based system.",
+          "media": "/images/comming_soon.webp"
+        },
+        {
+          "name": "AIs",
+          "description": "For various ennemies behaviors and interactions with the player. I used the Behavior Tree system in Unreal Engine to manage the AI behaviors and their interactions with the player.",
+          "media": "/images/comming_soon.webp"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "id": "5",
+      "title": "Percival Engine",
+      "tags": ["C++", "Vulkan"],
+      "image": "/images/percival_engine.png",
+      "short_description": "A project to learn about Engine Programming in C++ using the Vulkan graphics API.",
+      "duration": "Ongoing Project",
+      "team_size": "1 developer",
+      "language": "C++",
+      "date": "2024",
+      "role": "Engine Developper",
+      "project_type": "Course Project",
+      "links": {
+        "source_code": "https://github.com/vraus/PercivalEngine",
+        "itch_io": "https://vraus.itch.io/percival-engine",
+        "youtube": []
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["C++", "Blueprints", "Perforce"]
+      },
+      "description": [
+        "This project I started is for me to learn about engine programming in C++ using the Vulkan graphics API. I'm an Unreal Engine user and enjoyer, and using Unreal Engine made me realize how amazing Vulkan is. I don't expect to build a working game engine for myself; I simply want to play around with the API and have a more in-depth understanding of what is going on behind a game engine.", 
+        "I want to create a simple graphics engine that uses mechanical physics calculations to compute the movement logic within the engine. I want it to be as close to reality as possible.", 
+        "Also, I love solving puzzles and this project is very challenging. I love it."],
+      "contributions": "This project is a personal project, and I am the only developer.",
+      "features": [
+        {
+          "name": "Rendering a Triangle",
+          "description": "The first step in the graphics pipeline is to render a triangle. This involves setting up the graphics pipeline, creating a window, and rendering a triangle to the screen.",
+          "media": "/images/percival_engine.png"
+        },
+        {
+          "name": "Color and position translations",
+          "description": "The next step is to add color and position translations to the triangle. This involves creating a vertex buffer and a color buffer using shader code, and then using them to render the triangle.",
+          "media": "/gifs/PercivalEngine/position_color_translation.gif"
+        },
+        {
+          "name": "Scale and Rotation Transformations",
+          "description": "The next step is to add scale and rotation transformations to the triangle. This involves creating a transformation matrix and using it to transform the triangle's vertices.",
+          "media": "/gifs/PercivalEngine/rotation_scale_transform.gif"
+        }, 
+        {
+          "name": "Gravity System",
+          "description": "The next step is to add a gravity system to the triangle. This involves creating a gravity vector and using it to update the triangle's position over time.",
+          "media": "/images/comming_soon.webp"
         }
       ],
       "key_points": [
-        "Point fort du projet 1",
-        "Point fort du projet 2",
-        "Point fort du projet 3"
+        "Graphics Pipeline Basic Setup",
+        "Rendering a Triangle",
+        "Window Resizing",
+        "Copies and Motions",
+        "Scale Rotation Transformations",
+        "Gravity System"
       ]
     }
   ]
