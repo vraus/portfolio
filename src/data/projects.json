@@ -4,7 +4,7 @@
       "id": "1",
       "tags": ["C++", "Unreal Engine"],
       "title": "Steering Lab",
-      "image": "/gifs/SteeringLab/SeekFleeArrival.gif",
+      "image": "./gifs/SteeringLab/SeekFleeArrival.gif",
       "short_description": "Course project about AI in Games. Using C++ in Unreal, reproducing the steering of a controlled Pawn.",
       "duration": "5 months",
       "team_size": "1 developer",
@@ -30,22 +30,22 @@
         {
           "name": "Seek / Flee / Arrival",
           "description": "Moving toward and away from a Target without anticipation for stop, and Arrival stops the agent upon reaching the destination point.",
-          "media": "/gifs/SteeringLab/SeekFleeArrival.gif"
+          "media": "./gifs/SteeringLab/SeekFleeArrival.gif"
         },
         {
           "name": "Pursuit / Evade",
           "description": "Brève explication",
-          "media": "/gifs/SteeringLab/PursuitEvade.gif"
+          "media": "./gifs/SteeringLab/PursuitEvade.gif"
         },
         {
           "name": "Paths Behaviors",
           "description": "Brève explication",
-          "media": "/gifs/SteeringLab/PathMode.gif"
+          "media": "./gifs/SteeringLab/PathMode.gif"
         },
         {
           "name": "Path Finding / Avoidance",
           "description": "Brève explication",
-          "media": "/gifs/SteeringLab/PathFinding.gif"
+          "media": "./gifs/SteeringLab/PathFinding.gif"
         },
         {
           "name": "Planner",
@@ -59,7 +59,7 @@
       "id": "2",
       "title": "Chev's Quest",
       "tags": ["C#", "Unity"],
-      "image": "/images/chevs_quest.png",
+      "image": "./images/chevs_quest.png",
       "short_description": "A tiny Point & Click adventure taking place in European medieval eras, with various videogame references.",
       "duration": "3 months",
       "team_size": "1 developer",
@@ -82,12 +82,12 @@
         {
           "name": "Dialogues",
           "description": "Character dialogues using the Ink Plugin in Unity.",
-          "media": "/images/comming_soon.webp"
+          "media": "./images/comming_soon.webp"
         },
         {
           "name": "Sound Design",
           "description": "Using built-in sound management in Unity. Background music, sound effects, and ambiance. Plus a menu to manage the volume levels.",
-          "media": "/images/comming_soon.webp"
+          "media": "./images/comming_soon.webp"
         }
       ],
       "key_points": []
@@ -96,7 +96,7 @@
       "id": "3",
       "title": "Wwisard",
       "tags": ["C++", "Unreal Engine"],
-      "image": "/images/wwisard.jpg",
+      "image": "./images/wwisard.jpg",
       "short_description": "Single-Player Mini-FPS as a first approach to WWise integration in Unreal Engine 5 and Sound Programmation.",
       "duration": "3 months",
       "team_size": "1 developer",
@@ -127,7 +127,7 @@
       "id": "4",
       "title": "Red Pandas",
       "tags": ["C++", "Unreal Engine"],
-      "image": "/images/the_red_pandas.webp",
+      "image": "./images/the_red_pandas.webp",
       "short_description": "Course project of Massively Multiplayer Online Role Play Game (MMORPG) prototype using Unreal and C++.",
       "duration": "Ongoing project",
       "team_size": "2 developers",
@@ -150,17 +150,17 @@
         {
           "name": "Combat System",
           "description": "With Character Health and attacks components, Punch Animation and damage hitbox, Damage type and reaction type control with data structure. I also made sur it was and easy-to-attach to new characters as it's a component-based system.",
-          "media": "/images/comming_soon.webp"
+          "media": "./images/comming_soon.webp"
         },
         {
           "name": "Dialogue System",
           "description": "Player interaction with NPCs, using a data structure to manage the dialogues and the possible answers. I also made sure it was easy to add new dialogues to NPCs also using a component-based system.",
-          "media": "/images/comming_soon.webp"
+          "media": "./images/comming_soon.webp"
         },
         {
           "name": "AIs",
           "description": "For various ennemies behaviors and interactions with the player. I used the Behavior Tree system in Unreal Engine to manage the AI behaviors and their interactions with the player.",
-          "media": "/images/comming_soon.webp"
+          "media": "./images/comming_soon.webp"
         }
       ],
       "key_points": []
@@ -169,7 +169,7 @@
       "id": "5",
       "title": "Percival Engine",
       "tags": ["C++", "Vulkan"],
-      "image": "/images/percival_engine.png",
+      "image": "./images/percival_engine.png",
       "short_description": "A project to learn about Engine Programming in C++ using the Vulkan graphics API.",
       "duration": "Ongoing Project",
       "team_size": "1 developer",
@@ -195,22 +195,22 @@
         {
           "name": "Rendering a Triangle",
           "description": "The first step in the graphics pipeline is to render a triangle. This involves setting up the graphics pipeline, creating a window, and rendering a triangle to the screen.",
-          "media": "/images/percival_engine.png"
+          "media": "./images/percival_engine.png"
         },
         {
           "name": "Color and position translations",
           "description": "The next step is to add color and position translations to the triangle. This involves creating a vertex buffer and a color buffer using shader code, and then using them to render the triangle.",
-          "media": "/gifs/PercivalEngine/position_color_translation.gif"
+          "media": "./gifs/PercivalEngine/position_color_translation.gif"
         },
         {
           "name": "Scale and Rotation Transformations",
           "description": "The next step is to add scale and rotation transformations to the triangle. This involves creating a transformation matrix and using it to transform the triangle's vertices.",
-          "media": "/gifs/PercivalEngine/rotation_scale_transform.gif"
+          "media": "./gifs/PercivalEngine/rotation_scale_transform.gif"
         }, 
         {
           "name": "Gravity System",
           "description": "The next step is to add a gravity system to the triangle. This involves creating a gravity vector and using it to update the triangle's position over time.",
-          "media": "/images/comming_soon.webp"
+          "media": "./images/comming_soon.webp"
         }
       ],
       "key_points": [
