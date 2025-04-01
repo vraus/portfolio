@@ -3,11 +3,10 @@
 :root {
   --color-background: #ffffff; /* Blanc */
   --color-background-alt: #f5f5f5; /* Gris clair */
-  --color-border: #d1d5db; /* Gris moyen */
+  --color-background-hover: #e9e9e9;
 
   --color-primary: #444; /* Gris foncé */
   --color-primary-hover: #333; /* Gris plus foncé */
-  --color-primary-lighter: #666; /* Gris moyen */
 
   --color-secondary: #777; /* Gris intermédiaire */
   --color-secondary-hover: #555; /* Gris plus foncé */
@@ -15,9 +14,8 @@
   --color-accent: #aaa; /* Gris clair */
   --color-accent-hover: #888; /* Gris moyen */
 
-  --color-text-primary: #111; /* Presque noir */
-  --color-text-secondary: #666; /* Gris moyen */
-  --color-text-inverted: #ffffff; /* Blanc (pour fond foncé) */
+  --color-text-paragraph: #fff;
+  --color-text-inverted: #0a0a0a;
 
   --color-success: #4a4a4a; /* Gris foncé */
   --color-warning: #777; /* Gris intermédiaire */
@@ -33,36 +31,35 @@
 
 /* 🌓 Mode sombre - Noir & Violet Néon */
 .dark {
-  /* 🎨 Palette principale */
-  --color-background: #0a0a0a; /* Noir profond */
-  --color-background-alt: #161616; /* Noir légèrement éclairci */
-  --color-border: #3a0057; /* Violet très sombre */
+  /* Background */
+  --color-background: #191716;
+  --color-background-lighter: #1f1c1a;
+  --color-background-alt: #272422;
+  --color-background-hover: #2c2926;
+  --color-background-secondary: #d4d4d4;
 
   /* 🌟 Couleurs principales */
-  --color-primary: #8a2be2; /* Violet électrique */
-  --color-primary-hover: #9b30ff; /* Violet plus clair */
-  --color-primary-lighter: #b66dff; /* Lavande néon */
+  --color-primary: #7FB3C7; 
+  --color-primary-hover: #709eb0; 
 
-  --color-secondary: #e8d3ff;
-  --color-secondary-hover: #c09ee4;
+  --color-secondary: #ECCBD9;
+  --color-secondary-hover: #ddbac9;
 
   /* 🔥 Accents */
-  --color-accent: #ff00ff; /* Magenta néon */
-  --color-accent-hover: #ff66ff; /* Rose flashy */
+  --color-accent: #DB5461; 
+  --color-accent-hover: #ff66ff;
 
   /* 🖊️ Texte */
-  --color-text-primary: #954ada; /* Lavande très clair pour bon contraste */
-  --color-text-secondary: #e6e6fa; /* Violet pâle pour les textes secondaires */
-  --color-text-inverted: #0a0a0a; /* Noir pour les zones très claires */
+  --color-text-paragraph: #fff;
+  --color-text-inverted: #0a0a0a;
 
-  /* ✅ États (ex: boutons, alertes...) */
-  --color-success: #33ff99; /* Vert néon */
-  --color-warning: #ffcc00; /* Jaune lumineux */
-  --color-error: #ff0044; /* Rouge néon */
+  /* States */
+  --color-success: #33ff99;
+  --color-warning: #ffcc00;
+  --color-error: #ff0044; 
 
-  /* ✨ Ombres */
-  --shadow-soft: 0 0px 10px rgba(138, 43, 226, 0.3); /* Ombre violette douce */
-  --shadow-strong: 0 0px 20px rgba(255, 0, 255, 0.4); /* Ombre magenta intense */
+  --shadow-soft: 0 0px 10px rgba(255, 255, 255, 0.1);
+  --shadow-strong: 0 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -74,8 +71,9 @@
 .bg-accent { background-color: var(--color-accent); }
 
 /* Textes */
-.text-primary { color: var(--color-text-primary); }
-.text-secondary { color: var(--color-text-secondary); }
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-paragraph { color: var(--color-text-paragraph); }
 .text-background { color: var(--color-background); }
 .text-white { color:rgb(255, 255, 255); }
 
@@ -119,8 +117,8 @@
 
 .tech-tag {
   text-align: center;
-  border-color: var(--color-border);
-  color: var(--color-text-primary);
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
   border-radius: 0.5rem;
   padding: 0.25rem 0.75rem;
   margin: 0.25rem;
@@ -130,13 +128,22 @@
   box-shadow: var(--shadow-soft);
 }
 
+.detail-tech-tag {
+  text-align: center;
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-inverted);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: 500;
+}
+
 .link-primary {
   background-color: var(--color-background-alt);
   color: var(--color-text-inverted);
 }
 
 .link-primary:hover {
-  background-color: var(--color-border);
+  background-color: var(--color-background-hover);
 }
 
 /* Layout */
@@ -151,13 +158,6 @@
 .card {
   background: var(--color-background-alt);
   padding: 1.5rem;
-  box-shadow: var(--shadow-soft);
-}
-
-.card-secondary {
-  background: var(--color-primary-hover);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-soft);
 }
 
 /* Responsive Grid */
@@ -169,31 +169,37 @@
 
 .additional-info {
   background-color: rgb(0, 0, 0);
-  color: var(text-white);
+  color: var(color-text-paragraph);
 }
 
 /* Texts */
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--color-text-primary);
+  color: var(--color-primary);
 }
 
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--color-text-primary);
+  color: var(--color-primary);
 }
 
 h3 {
   font-size: 1.75rem;
   font-weight: bold;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
 }
 
 p {
   font-size: 1.25rem;
-  color: var(--color-text-secondary);
+  color: var(--color-text-paragraph);
 }
 
 /* Utils */
@@ -207,7 +213,7 @@ p {
 
 /* Scrollbar personnalisée pour la modale */
 .modal-content {
-  background-color: var(--color-background);
+  background-color: var(--color-background-lighter);
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--color-accent) var(--color-secondary);

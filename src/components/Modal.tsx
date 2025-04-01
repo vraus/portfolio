@@ -42,7 +42,7 @@ const LinkPreview = ({ url, url_name }: { url: string; url_name : string }) => {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className="block p-2 rounded-xl link-primary transition">
-      <p className="text-primary">{url_name}</p>
+      <p className="text-secondary">{url_name}</p>
       <p className="font-semibold text-secondary">{new URL(url).hostname}</p>
     </a>
   );
@@ -59,7 +59,7 @@ export default function Modal({ project, onClose }: ModalProps) {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
-        className="shadow-lg max-h-[95vh] overflow-y-auto relative modal-content"
+        className="max-h-[95vh] overflow-y-auto relative modal-content"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Bouton de fermeture */}
@@ -91,21 +91,21 @@ export default function Modal({ project, onClose }: ModalProps) {
 
             <div className="card">
               <h3 className="text-primary">About</h3>
-              <p className="text-primary mb-4">{project.short_description}</p>
+              <p className="text-paragraph mb-4">{project.short_description}</p>
               {/* Technologies */}
               <section className="">
                 <div className="">
                   <h3 className="font-semibold">Used Technologies :</h3>
                   <div className="flex flex-wrap gap-2 mt-2">
                     {project.technologies.languages.map((lang, index) => (
-                        <span key={index} className="px-3 py-1 text-sm bg-gray-200 rounded-lg">
-                  {lang}
-                </span>
+                        <span key={index} className="detail-tech-tag">
+                          {lang}
+                        </span>
                     ))}
                     {project.technologies.engine && (
-                        <span className="px-3 py-1 text-sm bg-gray-300 rounded-lg">
-                  {project.technologies.engine}
-                </span>
+                        <span className="detail-tech-tag">
+                          {project.technologies.engine}
+                        </span>
                     )}
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function Modal({ project, onClose }: ModalProps) {
           <h2>Description :</h2>
           <div>
             {project.description.map((desc, index) => (
-              <p key={index} className="text-secondary mb-2">{desc}</p>
+              <p key={index} className="mb-2">{desc}</p>
             ))}
           </div>
         </section>
@@ -162,30 +162,41 @@ export default function Modal({ project, onClose }: ModalProps) {
             </div>
 
             {/* Fonctionnalités */}
-              <div className="mb-4">
-                <h3 className="font-semibold">Features :</h3>
-                <ul className="list-disc pl-5 mt-2">
-                  {project.features.map((feature, index) => (
-                    <li key={index} className="mb-15">
-                      <p className="text-primary font-semibold">{feature.name}</p>
-                      <p className="text-secondary">{feature.description}</p>
-                      {feature.media && (
-                        <div>
-                          <Image
-                          src={feature.media}
-                          alt={`Illustration ${feature.name}`}
-                          className="w-80 h-80 object-cover rounded mt-2 cursor-pointer"
-                          width={160}
-                          height={160}
-                          unoptimized={true}
+            <div className="mb-4">
+              <h3 className="font-semibold">Features :</h3>
+              <div className="grid grid-responsive grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-2">
+                {project.features.map((feature, index) => (
+                  <div key={index} className="p-4 border rounded-lg shadow">
+                    <p className="text-primary font-semibold">{feature.name}</p>
+                    {feature.description && (
+                      <p>{feature.description}</p>
+                    )}
+                    {feature.media && (
+                      <div className="mt-2">
+                        {feature.media.includes(".webm") ? (
+                          <video
+                            src={feature.media}
+                            className="w-full h-auto object-cover rounded cursor-pointer"
+                            autoPlay
+                            loop
+                            muted
                           />
-                          <img src={feature.media} alt={feature.name} className="w-80 h-80 object-cover rounded mt-2 cursor-pointer" width={160} height={160} aria-hidden="true" />
-                        </div>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                        ) : (
+                          <Image
+                            src={feature.media}
+                            alt={`Illustration ${feature.name}`}
+                            className="w-full h-auto object-cover rounded cursor-pointer"
+                            width={160}
+                            height={160}
+                            unoptimized={true}
+                          />
+                        )}
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
+            </div>
           </section>
         }
 
