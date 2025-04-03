@@ -1,7 +1,7 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/solid"; 
 
 function ThemeToggleButton() {
-
     const [theme, setTheme] = useState<"light" | "dark">(() => {
         if (typeof window !== "undefined") {
             return localStorage.getItem("theme") === "dark" ? "dark" : "light";
@@ -22,9 +22,16 @@ function ThemeToggleButton() {
     };
 
     return (
-        <div>
-            <button className="btn btn-primary" onClick={toggleTheme}>Toggle Theme</button>
-        </div>
+        <button 
+            onClick={toggleTheme} 
+            className="p-2 rounded-full transition cursor-pointer"
+        >
+            {theme === "dark" ? (
+                <SunIcon className="w-6 h-6 text-white" />
+            ) : (
+                <MoonIcon className="w-6 h-6 text-primary" />
+            )}
+        </button>
     );
 }
 

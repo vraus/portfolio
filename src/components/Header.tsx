@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react";
+import Link from "next/link";
 import ThemeToggleButton from "./ThemeToggleButton";
 
 export default function Header() {
@@ -12,9 +13,9 @@ export default function Header() {
 
                 {/* Liens de navigation Desktop */}
                 <nav className="hidden md:flex space-x-6">
-                    <a href="#about" className="text-secondary hover:text-secondary-hover transition">About</a>
-                    <a href="#projects" className="text-secondary hover:text-secondary-hover transition">Projects</a>
-                    <a href="#contact" className="text-secondary hover:text-secondary-hover transition">Contact</a>
+                    <Link href="/" className="text-secondary hover:text-secondary-hover transition">Home</Link>
+                    <Link href="/about" className="text-secondary hover:text-secondary-hover transition">About</Link>
+                    <Link href="/projects" className="text-secondary hover:text-secondary-hover transition">Projects</Link>
                 </nav>
 
                 {/* Icônes à droite */}
@@ -37,18 +38,18 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Menu Mobile */}
+            {/* Menu Mobile sous le header */}
             <div 
-                className={`fixed top-16 left-0 w-full bg-secondary origin-top transition-all duration-300 ${
+                className={`fixed top-16 left-0 w-full bg-secondary shadow-soft origin-top transition-all duration-300 ${
                     isOpen 
                         ? "scale-y-100 opacity-100 pointer-events-auto" 
-                        : "scale-y-0 opacity-100 pointer-events-none"
+                        : "scale-y-0 opacity-0 pointer-events-none delay-200"
                 }`}
             >
                 <nav className="flex flex-col items-center space-y-4 py-4">
-                    <a href="/about" className="text-secondary hover:text-secondary-hover transition" onClick={() => setIsOpen(false)}>About</a>
-                    <a href="/projects" className="text-secondary hover:text-secondary-hover transition" onClick={() => setIsOpen(false)}>Projects</a>
-                    <a href="/contact" className="text-secondary hover:text-secondary-hover transition" onClick={() => setIsOpen(false)}>Contact</a>
+                    <Link href="/" className="text-secondary hover:text-secondary-hover transition" onClick={() => setIsOpen(false)}>Home</Link>
+                    <Link href="/about" className="text-secondary hover:text-secondary-hover transition" onClick={() => setIsOpen(false)}>About</Link>
+                    <Link href="/projects" className="text-secondary hover:text-secondary-hover transition" onClick={() => setIsOpen(false)}>Projects</Link>
                 </nav>
             </div>
         </header>
