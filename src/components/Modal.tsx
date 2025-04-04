@@ -112,19 +112,21 @@ export default function Modal({ project, onClose }: ModalProps) {
               </section>
             </div>
 
+            {/* TODO: center the information in the card */}
             <div className="card">
               <h3 className="text-primary">Project Infos</h3>
-              <ul className="space-y-2 text-primary">
-                <li><strong className="text-primary">Duration :</strong> {project.duration}</li>
-                <li><strong className="text-primary">Team Size :</strong> {project.team_size} personnes</li>
-                <li><strong className="text-primary">Type :</strong> {project.project_type}</li>
-              </ul>
+              <div className="mt-6">
+                <ul className="space-y-2 text-primary">
+                  <li className={"text-paragraph"}><strong className="text-primary">Duration :</strong> {project.duration}</li>
+                  <li className={"text-paragraph"}><strong className="text-primary">Team Size :</strong> {project.team_size}</li>
+                  <li className={"text-paragraph"}><strong className="text-primary">Type :</strong> {project.project_type}</li>
+                </ul>
+              </div>
             </div>
-
           </div>
         </section>
 
-        {/* Liens */}
+        {/* Liens TODO: Add some icons, or even replace texts with icon (GitHub / itch.io etc...) */}
         <section className="container">
           <h2>Links :</h2>
 
@@ -161,18 +163,20 @@ export default function Modal({ project, onClose }: ModalProps) {
               <p className="text-gray-700 mt-2">{project.contributions}</p>
             </div>
 
-            {/* Fonctionnalités */}
+            {/* Features TODO: Find a way to align all medias and features descriptions. */}
             <div className="mb-4">
               <h3 className="font-semibold">Features :</h3>
-              <div className="grid grid-responsive grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-2">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-2">
                 {project.features.map((feature, index) => (
-                  <div key={index} className="p-4 border rounded-lg shadow">
-                    <p className="text-primary font-semibold">{feature.name}</p>
-                    {feature.description && (
-                      <p>{feature.description}</p>
-                    )}
+                  <div key={index} className="p-4">
+                    <div className="flex flex-wrap gap-2">
+                      <p className="text-primary font-semibold">{feature.name}</p>
+                      {feature.description && (
+                        <p>{feature.description}</p>
+                      )}
+                    </div>
                     {feature.media && (
-                      <div className="mt-2">
+                      <div className="mt-4">
                         {feature.media.includes(".webm") ? (
                           <video
                             src={feature.media}
@@ -185,7 +189,7 @@ export default function Modal({ project, onClose }: ModalProps) {
                           <Image
                             src={feature.media}
                             alt={`Illustration ${feature.name}`}
-                            className="w-full h-auto object-cover rounded cursor-pointer"
+                            className="w-full h-auto object-cover rounded"
                             width={160}
                             height={160}
                             unoptimized={true}
@@ -200,7 +204,7 @@ export default function Modal({ project, onClose }: ModalProps) {
           </section>
         }
 
-        {/* Points Clés */}
+        {/* Key Points TODO: Replace the basic list with KeyPoint name + short description */}
         { project.key_points.length > 0 &&
           <section className="container">
           <div className="mb-4">

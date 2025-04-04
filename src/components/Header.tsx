@@ -11,16 +11,18 @@ export default function Header() {
         <header className="fixed top-0 left-0 w-full bg-background shadow-strong z-50 h-16 flex items-center px-6">
             <div className="flex items-center justify-end w-full space-x-6">
 
-                {/* Liens de navigation Desktop */}
+                {/* TODO: Replace 'Home' with my name and a little codding style animation */}
                 <nav className="hidden md:flex space-x-6">
                     <Link href="/" className="text-secondary hover:text-secondary-hover transition">Home</Link>
+                    { /* <Link href="/elements"
+                           className="text-secondary hover:text-secondary-hover transition">Elements</Link> */}
                     <Link href="/about" className="text-secondary hover:text-secondary-hover transition">About</Link>
                     <Link href="/projects" className="text-secondary hover:text-secondary-hover transition">Projects</Link>
                 </nav>
 
                 {/* Icônes à droite */}
                 <div className="flex items-center space-x-4">
-                    <ThemeToggleButton />
+                    <ThemeToggleButton/>
 
                     {/* Bouton Hamburger pour mobile */}
                     <button 

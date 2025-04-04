@@ -14,8 +14,8 @@
   --color-accent: #aaa; /* Gris clair */
   --color-accent-hover: #888; /* Gris moyen */
 
-  --color-text-paragraph: #fff;
-  --color-text-inverted: #0a0a0a;
+  --color-text-paragraph: #0a0a0a;
+  --color-text-inverted: #fff;
 
   --color-success: #4a4a4a; /* Gris foncé */
   --color-warning: #777; /* Gris intermédiaire */
@@ -169,7 +169,7 @@
 
 .additional-info {
   background-color: rgb(0, 0, 0);
-  color: var(color-text-paragraph);
+  color: var(--color-text-paragraph);
 }
 
 /* Texts */

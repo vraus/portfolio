@@ -3,6 +3,7 @@ export default function Links() {
     <div className="flex flex-col gap-4 mt-4 mb-4">
         <h2 className="text-2xl font-bold">My Links</h2>
 
+        {/* TODO: Replace the basic links with icons (Resume GitHub Linkedin Itch.io icons). */}
         <section className="mb-4">
                 <div className="grid grid-cols-4 md:grid-cols-4 gap-4 mt-4">
                     <a href="" target="_blank" rel="noopener noreferrer">
