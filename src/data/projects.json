@@ -40,18 +40,102 @@
         {
           "name": "Paths Behaviors",
           "description": "Defines how the agent follows a path: looping back, stopping at the end, or reversing direction to return to the start position.",
-          "media": null
+          "media": "./webms/SteeringLab/PathBehaviors.webm"
         },
         {
           "name": "Path Finding / Avoidance",
-          "description": null,
-          "media": "./gifs/SteeringLab/PathFinding.gif"
+          "description": "Path finding (A*) using SteeringLab code base for multiple agent to go back and forth between Targets and initial point.",
+          "media": "./webms/SteeringLab/PathFinding.webm"
         }
       ],
       "key_points": []
     },
     {
       "id": "2",
+      "title": "Red Pandas",
+      "tags": ["C++", "Unreal Engine"],
+      "image": "./images/the_red_pandas.webp",
+      "short_description": "Course project of Massively Multiplayer Online Role Play Game (MMORPG) prototype using Unreal and C++.",
+      "duration": "Ongoing project",
+      "team_size": "2 developers",
+      "language": "Unreal / C++",
+      "date": "2024",
+      "role": "Game Developper",
+      "project_type": "Course Project",
+      "links": {
+        "source_code": null,
+        "itch_io": null,
+        "youtube": null
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["C++", "Blueprints", "Perforce"]
+      },
+      "description": ["Collaborative Project in Pairs, prototyping an MMORPG with Classic Core MMO Mechanics such as Combat and Health system, Level progression and abilities to unlock, Inventory and equipment management, Dialogue and quest systems, Monster aggression zones"],
+      "contributions": "This project is very comprehensive and has allowed me to work on multiple aspects of developing a large-scale game while considering its networking components and scalability. My first contribution to this project was to integrate the versioning using Perforce, including the setup of a server to host the Perforce Server. To date, I have worked on the following features.",
+      "features": [
+        {
+          "name": "Combat System",
+          "description": "With Character Health and attacks components, Punch Animation and damage hitbox, Damage type and reaction type control with data structure. I also made sur it was and easy-to-attach to new characters as it's a component-based system.",
+          "media": "./images/comming_soon.webp"
+        },
+        {
+          "name": "Dialogue System",
+          "description": "Player interaction with NPCs, using a data structure to manage the dialogues and the possible answers. I also made sure it was easy to add new dialogues to NPCs also using a component-based system.",
+          "media": "./images/comming_soon.webp"
+        },
+        {
+          "name": "AIs",
+          "description": "For various ennemies behaviors and interactions with the player. I used the Behavior Tree system in Unreal Engine to manage the AI behaviors and their interactions with the player.",
+          "media": "./images/comming_soon.webp"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "id": "3",
+      "title": "Wwisard",
+      "tags": ["C++", "Unreal Engine"],
+      "image": "./webms/Wwisard/WwisardGameplay.webm",
+      "short_description": "Single-Player Mini-FPS as a first approach to WWise integration in Unreal Engine 5 and Sound Programmation.",
+      "duration": "3 months",
+      "team_size": "1 developer",
+      "language": "Unreal / C++",
+      "date": "2024",
+      "role": "Game Developper",
+      "project_type": "Personnal Project",
+      "links": {
+        "source_code": "https://github.com/vraus/Wwisard",
+        "itch_io": null,
+        "youtube": ["https://youtu.be/03hS-5pdrZ8"]
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["C++", "Blueprints", "Wwise"]
+      },
+      "description": ["I recently discovered how to integrate sounds dynamically and link them to gameplay using Wwise, and I wanted to practice with a simple gameplay project where I could experiment with the parameters and possibilities offered by this software." ," Since that project, I’ve been integrating Wwise into my other projects to plan audio programming, and I find this software very comprehensive and enjoyable to work with. The integration with Unreal is quite straightforward and well-documented."],
+      "contributions": "These features reflects what I learned doing this project.",
+      "features": [
+        {
+          "name": "3D Sound Integration",
+          "description": "Using Wwise integration plugin in Unreal Engine to simulate 3D sound propagation.",
+          "media": "./webms/Wwisard/WwisardGameplay.webm"
+        },
+        {
+          "name": "Control Menu",
+          "description": "A simple UI menu used to control sound volume with detached buses in Wwise.",
+          "media": "./webms/Wwisard/WwisardMenu.webm"
+        }
+      ],
+      "key_points": [
+        "Wwise integration in Unreal Engine 5",
+        "Basic Sound Programmation",
+        "Exploring Immersive Sound",
+        "Having fun with Sound Design and Programming"
+      ]
+    },
+    {
+      "id": "4",
       "title": "Chev's Quest",
       "tags": ["C#", "Unity"],
       "image": "./images/chevs_quest.png",
@@ -82,90 +166,6 @@
         {
           "name": "Sound Design",
           "description": "Using built-in sound management in Unity. Background music, sound effects, and ambiance. Plus a menu to manage the volume levels.",
-          "media": "./images/comming_soon.webp"
-        }
-      ],
-      "key_points": []
-    },
-    {
-      "id": "3",
-      "title": "Wwisard",
-      "tags": ["C++", "Unreal Engine"],
-      "image": "./webms/Wwisard/WwisardGameplay.webm",
-      "short_description": "Single-Player Mini-FPS as a first approach to WWise integration in Unreal Engine 5 and Sound Programmation.",
-      "duration": "3 months",
-      "team_size": "1 developer",
-      "language": "Unreal / C++",
-      "date": "2024",
-      "role": "Game Developper",
-      "project_type": "Personnal Project",
-      "links": {
-        "source_code": "https://github.com/vraus/Wwisard",
-        "itch_io": null,
-        "youtube": ["https://youtu.be/03hS-5pdrZ8"]
-      },
-      "technologies": {
-        "engine": "Unreal Engine",
-        "languages": ["C++", "Blueprints", "Wwise"]
-      },
-      "description": ["I recently discovered how to integrate sounds dynamically and link them to gameplay using Wwise, and I wanted to practice with a simple gameplay project where I could experiment with the parameters and possibilities offered by this software. Since that project, I’ve been integrating Wwise into my other projects to plan audio programming, and I find this software very comprehensive and enjoyable to work with. The integration with Unreal is quite straightforward and well-documented."],
-      "contributions": "These features reflects what I learned doing this project.",
-      "features": [
-        {
-          "name": "3D Sound Integration",
-          "description": "Using Wwise integration plugin in Unreal Engine to simulate 3D sound propagation.",
-          "media": "./webms/Wwisard/WwisardGameplay.webm"
-        },
-        {
-          "name": "Control Menu",
-          "description": "A simple UI menu used to control sound volume with detached buses in Wwise.",
-          "media": "./webms/Wwisard/WwisardMenu.webm"
-        }
-      ],
-      "key_points": [
-        "Wwise integration in Unreal Engine 5",
-        "Basic Sound Programmation",
-        "Exploring Immersive Sound",
-        "Having fun with Sound Design and Programming"
-      ]
-    },
-    {
-      "id": "4",
-      "title": "Red Pandas",
-      "tags": ["C++", "Unreal Engine"],
-      "image": "./images/the_red_pandas.webp",
-      "short_description": "Course project of Massively Multiplayer Online Role Play Game (MMORPG) prototype using Unreal and C++.",
-      "duration": "Ongoing project",
-      "team_size": "2 developers",
-      "language": "Unreal / C++",
-      "date": "2024",
-      "role": "Game Developper",
-      "project_type": "Course Project",
-      "links": {
-        "source_code": null,
-        "itch_io": null,
-        "youtube": []
-      },
-      "technologies": {
-        "engine": "Unreal Engine",
-        "languages": ["C++", "Blueprints", "Perforce"]
-      },
-      "description": ["Collaborative Project in Pairs, prototyping an MMORPG with Classic Core MMO Mechanics such as Combat and Health system, Level progression and abilities to unlock, Inventory and equipment management, Dialogue and quest systems, Monster aggression zones"],
-      "contributions": "This project is very comprehensive and has allowed me to work on multiple aspects of developing a large-scale game while considering its networking components and scalability. My first contribution to this project was to integrate the versioning using Perforce, including the setup of a server to host the Perforce Server. To date, I have worked on the following features.",
-      "features": [
-        {
-          "name": "Combat System",
-          "description": "With Character Health and attacks components, Punch Animation and damage hitbox, Damage type and reaction type control with data structure. I also made sur it was and easy-to-attach to new characters as it's a component-based system.",
-          "media": "./images/comming_soon.webp"
-        },
-        {
-          "name": "Dialogue System",
-          "description": "Player interaction with NPCs, using a data structure to manage the dialogues and the possible answers. I also made sure it was easy to add new dialogues to NPCs also using a component-based system.",
-          "media": "./images/comming_soon.webp"
-        },
-        {
-          "name": "AIs",
-          "description": "For various ennemies behaviors and interactions with the player. I used the Behavior Tree system in Unreal Engine to manage the AI behaviors and their interactions with the player.",
           "media": "./images/comming_soon.webp"
         }
       ],

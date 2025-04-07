@@ -145,21 +145,25 @@ export default function Modal({ project, onClose }: ModalProps) {
 
         {/* Liens TODO: Add some icons, or even replace texts with icon (GitHub / itch.io etc...) */}
         <section className="container">
-          <h2>Links :</h2>
+          {(project.links.youtube || project.links.itch_io || project.links.source_code) && (
+              <div>
+                <h2>Links :</h2>
 
-          <div className={"grid grid-cols-responsive gap-4 mt-4 mb-4"}>
-            {project.links.source_code && <div><LinkPreview url={project.links.source_code} url_name={"Source Code"} /></div>}
-            {project.links.itch_io && <div><LinkPreview url={project.links.itch_io} url_name={"Try it on Itch.io"}/></div>}
-          </div>
+                <div className={"grid grid-cols-responsive gap-4 mt-4 mb-4"}>
+                  {project.links.source_code && <div><LinkPreview url={project.links.source_code} url_name={"Source Code"} /></div>}
+                  {project.links.itch_io && <div><LinkPreview url={project.links.itch_io} url_name={"Try it on Itch.io"}/></div>}
+                </div>
 
-          {/* Affichage des vidéos YouTube */}
-          {project.links.youtube && project.links.youtube.length > 0 && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {project.links.youtube.map((url, index) => (
-                    <YoutubePreview key={index} url={url} />
-                ))}
+                {/* Affichage des vidéos YouTube */}
+                {project.links.youtube && project.links.youtube.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {project.links.youtube.map((url, index) => (
+                          <YoutubePreview key={index} url={url} />
+                      ))}
+                    </div>
+                )}
               </div>
-          )}
+            )}
         </section>
 
         {/* Description */}

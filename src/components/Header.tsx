@@ -10,6 +10,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-background shadow-strong z-50 h-16 flex items-center px-6">
+
       <div className="flex items-center justify-between w-full">
 
         {/* À gauche : le nom animé */}
@@ -20,6 +21,12 @@ export default function Header() {
         {/* À droite : nav + icônes */}
         <div className="flex items-center space-x-6">
           <nav className="hidden md:flex space-x-6">
+            <Link
+                href="/"
+                className="text-secondary hover:text-secondary-hover transition"
+            >
+              Home
+            </Link>
             <Link
                 href="/about"
                 className="text-secondary hover:text-secondary-hover transition"

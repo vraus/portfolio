@@ -47,9 +47,7 @@ export default function NameTypingEffect() {
                 style={{
                     animation: "blink 1s steps(1, start) infinite",
                 }}
-            >
-        |
-      </span>
+            >|</span>
     </span>
     );
 }
