@@ -73,14 +73,24 @@ export default function Modal({ project, onClose }: ModalProps) {
         {/* Titre & Image */}
         <section className="container">
           <h1 className="text-primary text-3xl font-bold mb-4">{project.title}</h1>
-          <Image
-            src={project.image}
-            alt={project.title}
-            className="w-full object-cover mb-4"
-            width={1910}
-            height={1080}
-            unoptimized={true}
-            />
+          {project.image.includes(".webm") ? (
+              <video
+                  src={project.image}
+                  className="w-full h-160 object-cover cursor-pointer"
+                  autoPlay
+                  loop
+                  muted
+              />
+          ) : (
+              <Image
+                  src={project.image}
+                  alt={`Illustration ${project.title}`}
+                  className="w-full h-160 object-cover"
+                  width={160}
+                  height={160}
+                  unoptimized={true}
+              />
+          )}
           {/* Description courte */}
 
         </section>
@@ -112,15 +122,22 @@ export default function Modal({ project, onClose }: ModalProps) {
               </section>
             </div>
 
-            {/* TODO: center the information in the card */}
-            <div className="card">
-              <h3 className="text-primary">Project Infos</h3>
-              <div className="mt-6">
-                <ul className="space-y-2 text-primary">
-                  <li className={"text-paragraph"}><strong className="text-primary">Duration :</strong> {project.duration}</li>
-                  <li className={"text-paragraph"}><strong className="text-primary">Team Size :</strong> {project.team_size}</li>
-                  <li className={"text-paragraph"}><strong className="text-primary">Type :</strong> {project.project_type}</li>
-                </ul>
+            <div className="card flex flex-col text-left items-start justify-between">
+              <div>
+                <h3 className="text-primary">Project Infos</h3>
+                <div className="mt-6">
+                  <ul className="space-y-2 text-primary">
+                    <li className="text-paragraph">
+                      <strong className="text-primary">Duration :</strong> {project.duration}
+                    </li>
+                    <li className="text-paragraph">
+                      <strong className="text-primary">Team Size :</strong> {project.team_size}
+                    </li>
+                    <li className="text-paragraph">
+                      <strong className="text-primary">Type :</strong> {project.project_type}
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -163,13 +180,12 @@ export default function Modal({ project, onClose }: ModalProps) {
               <p className="text-gray-700 mt-2">{project.contributions}</p>
             </div>
 
-            {/* Features TODO: Find a way to align all medias and features descriptions. */}
             <div className="mb-4">
               <h3 className="font-semibold">Features :</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-2">
                 {project.features.map((feature, index) => (
-                  <div key={index} className="card p-4">
-                    <div className="flex flex-wrap gap-2">
+                  <div key={index} className="card p-4 flex flex-col justify-between min-h-[300px]">
+                    <div>
                       <p className="text-primary font-semibold">{feature.name}</p>
                       {feature.description && (
                         <p>{feature.description}</p>
@@ -180,7 +196,7 @@ export default function Modal({ project, onClose }: ModalProps) {
                         {feature.media.includes(".webm") ? (
                           <video
                             src={feature.media}
-                            className="w-full h-auto object-cover rounded cursor-pointer"
+                            className="w-auto h-auto object-cover cursor-pointer"
                             autoPlay
                             loop
                             muted
@@ -189,9 +205,9 @@ export default function Modal({ project, onClose }: ModalProps) {
                           <Image
                             src={feature.media}
                             alt={`Illustration ${feature.name}`}
-                            className="w-full h-auto object-cover rounded"
+                            className="w-auto h-auto object-cover"
                             width={160}
-                            height={160}
+                            height={74}
                             unoptimized={true}
                           />
                         )}

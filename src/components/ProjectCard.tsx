@@ -10,9 +10,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <div>
                     {project.image.includes(".webm") ? (
                     <video src={project.image}
-                        className="w-full h-160 object-cover cursor-pointer"
-                        width={600}
-                        height={160}
+                        className="w-full h-100 object-cover cursor-pointer"
                         autoPlay
                         loop
                         muted

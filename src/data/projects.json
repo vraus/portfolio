@@ -4,7 +4,7 @@
       "id": "1",
       "tags": ["C++", "Unreal Engine"],
       "title": "Steering Lab",
-      "image": "./gifs/SteeringLab/SeekFleeArrival.gif",
+      "image": "./webms/SteeringLab/SeekFleeArrival.webm",
       "short_description": "Course project about AI in Games. Using C++ in Unreal, reproducing the steering of a controlled Pawn.",
       "duration": "5 months",
       "team_size": "1 developer",
@@ -30,27 +30,22 @@
         {
           "name": "Seek / Flee / Arrival",
           "description": "Moving toward and away from a Target without anticipation for stop, and Arrival stops the agent upon reaching the destination point.",
-          "media": "./gifs/SteeringLab/SeekFleeArrival.gif"
+          "media": "./webms/SteeringLab/SeekFleeArrival.webm"
         },
         {
           "name": "Pursuit / Evade",
-          "description": null,
-          "media": "./gifs/SteeringLab/PursuitEvade.gif"
+          "description": "Moves toward or away from a moving Target with anticipation, predicting its path to chase or avoid efficiently.",
+          "media": "./webms/SteeringLab/PursuitEvade.webm"
         },
         {
           "name": "Paths Behaviors",
-          "description": null,
-          "media": "./gifs/SteeringLab/PathMode.gif"
+          "description": "Defines how the agent follows a path: looping back, stopping at the end, or reversing direction to return to the start position.",
+          "media": null
         },
         {
           "name": "Path Finding / Avoidance",
           "description": null,
           "media": "./gifs/SteeringLab/PathFinding.gif"
-        },
-        {
-          "name": "Planner",
-          "description": null,
-          "media": null
         }
       ],
       "key_points": []
@@ -96,7 +91,7 @@
       "id": "3",
       "title": "Wwisard",
       "tags": ["C++", "Unreal Engine"],
-      "image": "./images/wwisard.jpg",
+      "image": "./webms/Wwisard/WwisardGameplay.webm",
       "short_description": "Single-Player Mini-FPS as a first approach to WWise integration in Unreal Engine 5 and Sound Programmation.",
       "duration": "3 months",
       "team_size": "1 developer",
@@ -115,7 +110,18 @@
       },
       "description": ["I recently discovered how to integrate sounds dynamically and link them to gameplay using Wwise, and I wanted to practice with a simple gameplay project where I could experiment with the parameters and possibilities offered by this software. Since that project, I’ve been integrating Wwise into my other projects to plan audio programming, and I find this software very comprehensive and enjoyable to work with. The integration with Unreal is quite straightforward and well-documented."],
       "contributions": "These features reflects what I learned doing this project.",
-      "features": [],
+      "features": [
+        {
+          "name": "3D Sound Integration",
+          "description": "Using Wwise integration plugin in Unreal Engine to simulate 3D sound propagation.",
+          "media": "./webms/Wwisard/WwisardGameplay.webm"
+        },
+        {
+          "name": "Control Menu",
+          "description": "A simple UI menu used to control sound volume with detached buses in Wwise.",
+          "media": "./webms/Wwisard/WwisardMenu.webm"
+        }
+      ],
       "key_points": [
         "Wwise integration in Unreal Engine 5",
         "Basic Sound Programmation",
@@ -200,7 +206,7 @@
         {
           "name": "Color and position translations",
           "description": "The next step is to add color and position translations to the triangle. This involves creating a vertex buffer and a color buffer using shader code, and then using them to render the triangle.",
-          "media": "./gifs/PercivalEngine/position_color_translation.gif"
+          "media": "./webms/PercivalEngine/position_color_translation.webm"
         },
         {
           "name": "Scale and Rotation Transformations",

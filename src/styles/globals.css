@@ -41,8 +41,8 @@
   --color-primary: #7fb3c7;
   --color-primary-hover: #709eb0;
 
-  --color-secondary: #eccbd9;
-  --color-secondary-hover: #ddbac9;
+  --color-secondary: #ececec;
+  --color-secondary-hover: #cfcfcf;
 
   /* 🔥 Accents */
   --color-accent: #db5461;
@@ -280,4 +280,17 @@ p {
 
 .modal-content::-webkit-scrollbar-thumb:hover {
   background: var(--color-accent-hover);
+}
+
+@keyframes blink {
+  0%, 49% {
+    visibility: visible;
+  }
+  50%, 100% {
+    visibility: hidden;
+  }
+}
+
+.blinking-cursor {
+  animation: blink 1s step-start infinite;
 }
