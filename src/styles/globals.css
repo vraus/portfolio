@@ -28,7 +28,6 @@
   --shadow-strong: 0 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 /* 🌓 Mode sombre - Noir & Violet Néon */
 .dark {
   /* Background */
@@ -39,14 +38,14 @@
   --color-background-secondary: #d4d4d4;
 
   /* 🌟 Couleurs principales */
-  --color-primary: #7FB3C7; 
-  --color-primary-hover: #709eb0; 
+  --color-primary: #7fb3c7;
+  --color-primary-hover: #709eb0;
 
-  --color-secondary: #ECCBD9;
+  --color-secondary: #eccbd9;
   --color-secondary-hover: #ddbac9;
 
   /* 🔥 Accents */
-  --color-accent: #DB5461; 
+  --color-accent: #db5461;
   --color-accent-hover: #ff66ff;
 
   /* 🖊️ Texte */
@@ -56,35 +55,63 @@
   /* States */
   --color-success: #33ff99;
   --color-warning: #ffcc00;
-  --color-error: #ff0044; 
+  --color-error: #ff0044;
 
   --shadow-soft: 0 0px 10px rgba(255, 255, 255, 0.1);
   --shadow-strong: 0 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /* Arrière-plans */
-.bg-background { background-color: var(--color-background); }
-.bg-secondary { background-color: var(--color-background-alt); }
-.bg-hover { background-color: var(--color-primary-hover); }
-.bg-accent { background-color: var(--color-accent); }
+.bg-background {
+  background-color: var(--color-background);
+  transition: all 0.3s ease-in-out;
+}
+.bg-secondary {
+  background-color: var(--color-background-alt);
+  transition: all 0.3s ease-in-out;
+}
+.bg-hover {
+  background-color: var(--color-primary-hover);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
 
 /* Textes */
-.text-primary { color: var(--color-primary); }
-.text-secondary { color: var(--color-secondary); }
-.text-paragraph { color: var(--color-text-paragraph); }
-.text-background { color: var(--color-background); }
-.text-white { color:rgb(255, 255, 255); }
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.text-paragraph {
+  color: var(--color-text-paragraph);
+}
+.text-background {
+  color: var(--color-background);
+}
+.text-white {
+  color: rgb(255, 255, 255);
+}
 
 /* Bordures */
-.border-primary { border-color: var(--color-primary); }
-.border-secondary { border-color: var(--color-secondary); }
-.border-accent { border-color: var(--color-accent); }
+.border-primary {
+  border-color: var(--color-primary);
+}
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+.border-accent {
+  border-color: var(--color-accent);
+}
 
 /* Ombres */
-.shadow-soft { box-shadow: var(--shadow-soft); }
-.shadow-strong { box-shadow: var(--shadow-strong); }
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+.shadow-strong {
+  box-shadow: var(--shadow-strong);
+}
 
 /* Boutons réutilisables */
 .btn {
@@ -99,20 +126,24 @@
   background-color: var(--color-primary);
   color: var(--color-text-inverted);
   box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-hover);
   box-shadow: var(--shadow-strong);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-secondary {
   background-color: var(--color-secondary);
   color: var(--color-text-inverted);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-secondary:hover {
   background-color: var(--color-secondary-hover);
+  transition: all 0.3s ease-in-out;
 }
 
 .tech-tag {
@@ -126,6 +157,7 @@
   font-weight: 500;
   border-width: 1px;
   box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease-in-out;
 }
 
 .detail-tech-tag {
@@ -135,11 +167,13 @@
   border-radius: 0.5rem;
   padding: 0.25rem 0.75rem;
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
 .link-primary {
   background-color: var(--color-background-alt);
   color: var(--color-text-inverted);
+  transition: all 0.3s ease-in-out;
 }
 
 .link-primary:hover {
@@ -152,12 +186,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Cartes */
 .card {
   background: var(--color-background-alt);
   padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Responsive Grid */
@@ -170,6 +206,7 @@
 .additional-info {
   background-color: rgb(0, 0, 0);
   color: var(--color-text-paragraph);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Texts */
@@ -177,29 +214,34 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: bold;
   color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
 }
 
 h3 {
   font-size: 1.75rem;
   font-weight: bold;
   color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
 }
 
 h4 {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
 }
 
 p {
   font-size: 1.25rem;
   color: var(--color-text-paragraph);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Utils */
