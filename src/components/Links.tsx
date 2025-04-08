@@ -6,8 +6,7 @@ export default function Links() {
       {/* TODO: Replace the basic links with icons (Resume GitHub Linkedin Itch.io icons). */}
       <section className="mb-4">
         <div className="grid grid-cols-4 md:grid-cols-4 gap-4 mt-4">
-          {/* TODO: Link to the PDF */}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="/portfolio_cv.pdf" target="_blank" rel="noopener noreferrer">
             <div className="card">
               <h3 className="text-secondary">Resume</h3>
             </div>

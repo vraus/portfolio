@@ -59,9 +59,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <TitleTypingEffect />
             </div>
 
-            <h3 className="text-muted-foreground text-white font-mono text-left max-w-md mb-6">
+            <h4 className="text-muted-foreground text-white font-mono text-left max-w-md mb-6">
                 Student&apos;s in Master&apos;s Degree of<br/>Computer Sciences<br/>Game Engine
-            </h3>
+            </h4>
 
             <div className="mt-8 w-full">{children}</div>
         </div>

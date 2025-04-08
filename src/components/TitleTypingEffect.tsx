@@ -44,7 +44,7 @@ export default function TitleTypingEffect() {
         }
 
         return () => clearTimeout(timeout);
-    }, [text, isDeleting, wordIndex]);
+    }, [text, isDeleting, wordIndex, hold]);
 
     return (
         <span className="font-semibold font-mono text-primary text-4xl whitespace-nowrap gradient-text">
