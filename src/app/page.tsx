@@ -14,11 +14,11 @@ export default function Home() {
     <div className="container">
       <Layout>
 
-        <div className="mb-4">
+        <div className="mt-4">
           <Links />
         </div>
 
-        <div className="mb-4">
+        <div className="">
           <TechnicalExperience />
         </div>
 
