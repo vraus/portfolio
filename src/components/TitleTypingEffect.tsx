@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const WORDS = ["GAME DEVELOPER", "SOUND PROGRAMMER", "ENGINE DEVELOPER"];
 const TYPING_SPEED = 100;
 const DELETING_SPEED = 60;
-const HOLD_BEFORE_DELETION = 1500;
+const HOLD_BEFORE_DELETION = 500;
 const HOLD_AFTER_DELETION = 500;
 
 export default function TitleTypingEffect() {
@@ -20,6 +20,7 @@ export default function TitleTypingEffect() {
 
         let timeout: NodeJS.Timeout;
 
+        // TODO: Animation doesn't delete.. Just type and wait
         if (!isDeleting && currentLength < currentWord.length) {
             timeout = setTimeout(() => {
                 setText(currentWord.slice(0, currentLength + 1));

@@ -5,11 +5,11 @@ import Image from 'next/image';
 
 const educations = [
     {
-        title: "Squeegee, Lille (current position)",
+        title: "Apprenticeship, Squeegee (current position)",
         description: "Software Developer Apprenticeship with UE5.",
         key_points: ["UE5", "Blender", "C++"],
         link: "https://www.squeegeeverse.com",
-        media: "./svgs/file.svg", // Example media
+        media: "./svgs/file.svg",
     },
     {
         title: "University of Artois, Lens (2023-2025)",

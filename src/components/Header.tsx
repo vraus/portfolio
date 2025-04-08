@@ -28,16 +28,16 @@ export default function Header() {
               Home
             </Link>
             <Link
-                href="/about"
-                className="text-secondary hover:text-secondary-hover transition"
-            >
-              About
-            </Link>
-            <Link
                 href="/projects"
                 className="text-secondary hover:text-secondary-hover transition"
             >
               Projects
+            </Link>
+            <Link
+                href="/about"
+                className="text-secondary hover:text-secondary-hover transition"
+            >
+              About
             </Link>
           </nav>
 
