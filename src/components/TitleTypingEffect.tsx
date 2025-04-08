@@ -1,16 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {userAgent} from "next/server";
 
-const WORDS = ["Hadrien Belleville >", "Vraus >"];
+const WORDS = ["GAME DEVELOPER", "SOUND PROGRAMMER", "ENGINE DEVELOPER"];
 const TYPING_SPEED = 100;
 const DELETING_SPEED = 60;
-const PAUSE_BETWEEN = 1200;
+const HOLD_BEFORE_DELETION = 1500;
+const HOLD_AFTER_DELETION = 500;
 
-export default function NameTypingEffect() {
+export default function TitleTypingEffect() {
     const [text, setText] = useState("");
     const [wordIndex, setWordIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [hold, setHold] = useState(false);
 
     useEffect(() => {
         const currentWord = WORDS[wordIndex];
@@ -22,25 +25,30 @@ export default function NameTypingEffect() {
             timeout = setTimeout(() => {
                 setText(currentWord.slice(0, currentLength + 1));
             }, TYPING_SPEED);
+        } else if (!isDeleting && currentLength === currentWord.length && !hold) {
+            setHold(true);
+            timeout = setTimeout(() => {
+                setHold(false);
+                setIsDeleting(true);
+            }, HOLD_BEFORE_DELETION);
         } else if (isDeleting && currentLength > 0) {
             timeout = setTimeout(() => {
                 setText(currentWord.slice(0, currentLength - 1));
             }, DELETING_SPEED);
-        } else {
+        } else if (isDeleting && currentLength === 0 && !hold) {
+            setHold(true);
             timeout = setTimeout(() => {
-                setIsDeleting(!isDeleting);
-                if (!isDeleting) {
-                } else {
-                    setWordIndex((prev) => (prev + 1) % WORDS.length);
-                }
-            }, PAUSE_BETWEEN);
+                setHold(false);
+                setIsDeleting(false);
+                setWordIndex((prev) => (prev + 1) % WORDS.length);
+            }, HOLD_AFTER_DELETION);
         }
 
         return () => clearTimeout(timeout);
     }, [text, isDeleting, wordIndex]);
 
     return (
-        <span className="font-mono text-primary text-lg whitespace-nowrap gradient-text">
+        <span className="font-semibold font-mono text-primary text-4xl whitespace-nowrap gradient-text">
       {text}
             <span
                 className="ml-1"

@@ -10,7 +10,6 @@ import Links from "@/components/Links";
 
 export default function Home() {
 
-  // TODO: When returning to menu, dark / light mode refreshes causing a flash... need to fix this !!
   return (
     <div className="container">
       <Layout>
