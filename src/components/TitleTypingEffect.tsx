@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {userAgent} from "next/server";
 
 const WORDS = ["GAME DEVELOPER", "SOUND PROGRAMMER", "ENGINE DEVELOPER"];
 const TYPING_SPEED = 100;

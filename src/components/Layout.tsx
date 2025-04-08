@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             clearInterval(interval);
             clearInterval(secondInterval);
         };
-    }, []);
+    }, [rolesLeft.length, rolesRight.length]);
 
     return (
         <div className="flex flex-col items-start justify-center min-h-screen p-8">
