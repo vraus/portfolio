@@ -6,7 +6,7 @@ function ThemeToggleButton() {
     if (typeof window !== "undefined") {
       return localStorage.getItem("theme") === "dark" ? "dark" : "light";
     }
-    return "";
+    return "dark";
   });
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function ThemeToggleButton() {
       {
         <button onClick={toggleTheme} className="p-2 transition cursor-pointer">
           {/*<MoonIcon className="w-6 h-6 text-primary" />*/}
-          <p className = "gradient-text">
+          <p className="gradient-text">
             {theme === "light" ? (
               <span className="text-primary">Dark Theme</span>
             ) : (
