@@ -6,7 +6,7 @@ function ThemeToggleButton() {
     if (typeof window !== "undefined") {
       return localStorage.getItem("theme") === "dark" ? "dark" : "light";
     }
-    return "light";
+    return "";
   });
 
   useEffect(() => {
