@@ -172,7 +172,11 @@ export default function Modal({ project, onClose }: ModalProps) {
           <h2>Description :</h2>
           <div>
             {project.description.map((desc, index) => (
-              <p key={index} className="mb-2">{desc}</p>
+                <p
+                    key={index}
+                    className="mb-2"
+                    dangerouslySetInnerHTML={{ __html: desc }}
+                />
             ))}
           </div>
         </section>
@@ -182,7 +186,10 @@ export default function Modal({ project, onClose }: ModalProps) {
           <section className="container">
             <div className="mb-4">
               <h2 className="font-semibold">Contributions :</h2>
-              <p className="text-gray-700 mt-2">{project.contributions}</p>
+              <p
+                  className="mb-2"
+                  dangerouslySetInnerHTML={{ __html: project.contributions }}
+              />
             </div>
 
             <div className="mb-4">

@@ -24,7 +24,7 @@
         "engine": "Unreal Engine",
         "languages": ["C++", "Blueprints"]
       },
-      "description": ["The Steering Lab project aims to recreate, in C++, the movement of a Pawn in a 3D environment based on a Target and a Behavior.The Pawn has several possible behaviors that can be selected at runtime, described in the features section."],
+      "description": ["The <strong>Steering Lab project</strong> aims to recreate, in <strong>C++</strong>, the movement of a Pawn in a 3D environment based on a Target and a Behavior.", "The Pawn has several possible behaviors that can be selected at runtime, described in the features section."],
       "contributions": "As a solo project, I made alone all the features for this Lab.",
       "features": [
         {
@@ -156,7 +156,7 @@
         "languages": ["C#", "Ink Plugin"]
       },
       "description": ["I  originally wrote the story of this game as a gift. I chose a 2D pixel art graphic style because I really enjoy these atmospheres and it gives the simplistic homemade feel I was looking for in the first chapter of this character's adventures"],
-      "contributions": "I developed the entire game in Unity using the Ink plugin for managing character dialogues. I also made it a point to ensure a pleasant and consistent soundscape. My main reference for the music was Divinity Original Sin 2. And where there is music, there are also sound effects and ambiance. I added all the sounds I deemed relevant, as well as a menu to manage the different volume levels.",
+      "contributions": "I developed the entire game in Unity using the <a href='https://www.inklestudios.com' target='_blank'>Ink Plugin</a> for managing character dialogues. I also made it a point to ensure a pleasant and consistent soundscape. My main reference for the music was Divinity Original Sin 2. And where there is music, there are also sound effects and ambiance. I added all the sounds I deemed relevant, as well as a menu to manage the different volume levels.",
       "features": [
         {
           "name": "Dialogues",
