@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import projectsData from "../data/projects.json";
 import React from "react";
+import '../styles/globals.css';
 
 type Project = (typeof projectsData)["projects"][number];
 

@@ -2,13 +2,16 @@
 
 :root {
   --color-background: #ffffff; /* Blanc */
+  --color-background-lighter: #ffffff;
   --color-background-alt: #f5f5f5; /* Gris clair */
   --color-background-hover: #e9e9e9;
+  --color-background-secondary: #a8a8a8;
 
-  --color-primary: #444; /* Gris foncé */
-  --color-primary-hover: #333; /* Gris plus foncé */
+  --color-primary: #ac59ff;
+  --color-primary-hover: #f1268a;
 
   --color-secondary: #777; /* Gris intermédiaire */
+  --color-secondary-light: #ececec;
   --color-secondary-hover: #555; /* Gris plus foncé */
 
   --color-accent: #aaa; /* Gris clair */
@@ -37,11 +40,11 @@
   --color-background-hover: #2c2926;
   --color-background-secondary: #d4d4d4;
 
-  /* 🌟 Couleurs principales */
   --color-primary: #c084fc;
   --color-primary-hover: #ec4899;
 
   --color-secondary: #ececec;
+  --color-secondary-light: #ececec;
   --color-secondary-hover: #cfcfcf;
 
   /* 🔥 Accents */
@@ -140,8 +143,8 @@
 }
 
 .btn-secondary {
-  background-color: var(--color-secondary);
-  color: var(--color-text-inverted);
+  background-color: var(--color-secondary-light);
+  color: rgb(0, 0, 0);
   transition: all 0.3s ease-in-out;
 }
 
@@ -209,7 +212,7 @@
 
 .additional-info {
   background-color: rgb(0, 0, 0);
-  color: var(--color-text-paragraph);
+  color: rgb(255, 255, 255);
   transition: all 0.3s ease-in-out;
 }
 
@@ -249,6 +252,14 @@ h4 {
   color: var(--color-primary);
   transition: all 0.3s ease-in-out;
 }
+
+.h4-muted {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text-paragraph);
+  transition: all 0.3s ease-in-out;
+}
+
 
 p {
   font-size: 1.25rem;
