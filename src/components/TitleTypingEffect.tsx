@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 
 const WORDS = ["GAME DEVELOPER", "SOUND PROGRAMMER", "ENGINE DEVELOPER"];

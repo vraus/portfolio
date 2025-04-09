@@ -28,9 +28,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
       >
-      <script
+        <script
           dangerouslySetInnerHTML={{
-              __html: `
+            __html: `
                 (function() {
                   try {
                     const theme = localStorage.getItem('theme');
@@ -41,9 +41,9 @@ export default function RootLayout({
                   } catch(e) {}
                 })();`,
           }}
-      />
+        />
         <Header />
-        <div className="mr-16 ml-16 mt-12">{children}</div>
+        <div className="md:mx-8 lg:mx-12 mt-12">{children}</div>
       </body>
     </html>
   );
