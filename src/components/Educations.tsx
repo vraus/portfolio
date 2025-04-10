@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const educations = [
     {
@@ -9,7 +10,7 @@ const educations = [
         description: "Software Developer UE5.",
         key_points: ["UE5", "Blender", "C++"],
         link: "https://www.squeegeeverse.com",
-        media: "./svgs/file.svg",
+        media: "./images/logos/squeegee_logo.png",
         date: "2024 - Present",
     },
     {
@@ -17,7 +18,7 @@ const educations = [
         description: "Ambassador. Contact between Univ and La Plaine Images.",
         key_points: [],
         link: "https://www.univ-artois.fr",
-        media: "./svgs/file.svg",
+        media: "./images/logos/laplaineimages_logo.svg",
         date: "2023 - 2025",
     },
     {
@@ -25,7 +26,7 @@ const educations = [
         description: "Master's Degree of Software Engineering in Games.",
         key_points: ["C++", "Cuda", "UE5"],
         link: "https://www.univ-artois.fr",
-        media: "./svgs/file.svg",
+        media: "./images/logos/artois_logo.png",
         date: "2023 - 2025",
     },
     {
@@ -33,7 +34,7 @@ const educations = [
         description: "Last year of Bachelor's Degree abroad.",
         key_points: ["C++ / Java", "Project Management", "AI Ethic", "Cybersecurity"],
         link: "https://www.uqac.ca",
-        media: "./svgs/file.svg",
+        media: "./images/logos/UQAC_Logo.png",
         date: "2022 - 2023",
     },
     {
@@ -41,7 +42,7 @@ const educations = [
         description: "Bachelor's Degree in Computer Sciences.",
         key_points: ["Basic programming", "Software architecture", "Algo & Maths"],
         link: "https://www.univ-brest.fr/fr",
-        media: "./svgs/file.svg",
+        media: "./images/logos/ubo_logo_white.png",
         date: "2020 - 2023",
     },
 ];
@@ -55,14 +56,24 @@ export default function Educations() {
 
             <div className="relative w-full max-w-4xl mx-auto">
                 {/* Timeline line */}
-                <div className="timeline-line" />
+                <motion.div
+                    className="absolute left-1/2 transform -translate-x-1/2 w-1 z-0 timeline-line"
+                    initial={{ height: 0 }}
+                    animate={{ height: "100%" }}
+                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    viewport={{ once: true, amount: 0 }}
+                />
 
                 {educations.map((edu, index) => (
-                    <div
+                    <motion.div
                         key={index}
                         className={`mb-16 flex flex-col lg:flex-row items-center relative z-10 ${
                             index % 2 === 0 ? "lg:flex-row-reverse" : ""
                         }`}
+                        initial={{ opacity: 0, scale: 0.7 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: index * 0.20, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0 }}
                     >
                         {/* Card */}
                         <div className="w-full lg:w-1/2 px-4">
@@ -73,9 +84,10 @@ export default function Educations() {
                                         <Image
                                             src={edu.media}
                                             alt="Media"
-                                            className="w-10 h-10 ml-4"
+                                            className="ml-4"
                                             width={100}
                                             height={100}
+                                            unoptimized={true}
                                         />
                                     )}
                                 </div>
@@ -114,7 +126,7 @@ export default function Educations() {
                             <p className="max-w-fit">{edu.date}</p>
                         </div>
 
-                    </div>
+                    </motion.div>
                 ))}
 
             </div>
