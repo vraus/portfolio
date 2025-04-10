@@ -51,7 +51,6 @@ const educations = [
 export default function Educations() {
     return (
         <div className="py-12">
-             {/*TODO: fix card size with invisible / squeeshed website button */}
             <h1 className="text-3xl font-bold mb-12 text-center">Experience</h1>
 
             <div className="relative w-full max-w-4xl mx-auto">

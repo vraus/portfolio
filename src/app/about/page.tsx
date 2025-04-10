@@ -1,5 +1,6 @@
 import Educations from "@/components/Educations"
 import Activities from "@/components/Activities";
+import GamesThatMadeMe from "@/components/GameThatMadeMe";
 
 import "../../styles/globals.css"
 
@@ -12,6 +13,10 @@ export default function AboutPage() {
 
           <div>
               <Activities />
+          </div>
+
+          <div>
+              <GamesThatMadeMe />
           </div>
       </div>
     );
