@@ -9,17 +9,17 @@ export default function Links() {
     {
       name: "Resume",
       href: "./portfolio_cv.pdf",
-      logo: "./images/logos/resume_logo.png",
+      logo: "./images/logos/resume_logo.webp",
     },
     {
       name: "GitHub",
       href: "https://github.com/vraus",
-      logo: "./images/logos/github_logo.png",
+      logo: "./images/logos/github_logo.webp",
     },
     {
       name: "Itch.io",
       href: "https://vraus.itch.io",
-      logo: "./images/logos/itchio_logo.png",
+      logo: "./images/logos/itchio_logo.webp",
     },
     {
       name: "Linkedin",

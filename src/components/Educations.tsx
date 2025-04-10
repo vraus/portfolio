@@ -10,7 +10,7 @@ const educations = [
         description: "Software Developer UE5.",
         key_points: ["UE5", "Blender", "C++"],
         link: "https://www.squeegeeverse.com",
-        media: "./images/logos/squeegee_logo.png",
+        media: "./images/logos/squeegee_logo.webp",
         date: "2024 - Present",
     },
     {
@@ -26,7 +26,7 @@ const educations = [
         description: "Master's Degree of Software Engineering in Games.",
         key_points: ["C++", "Cuda", "UE5"],
         link: "https://www.univ-artois.fr",
-        media: "./images/logos/artois_logo.png",
+        media: "./images/logos/artois_logo.webp",
         date: "2023 - 2025",
     },
     {
@@ -34,7 +34,7 @@ const educations = [
         description: "Last year of Bachelor's Degree abroad.",
         key_points: ["C++ / Java", "Project Management", "AI Ethic", "Cybersecurity"],
         link: "https://www.uqac.ca",
-        media: "./images/logos/UQAC_Logo.png",
+        media: "./images/logos/UQAC_Logo.webp",
         date: "2022 - 2023",
     },
     {
@@ -42,7 +42,7 @@ const educations = [
         description: "Bachelor's Degree in Computer Sciences.",
         key_points: ["Basic programming", "Software architecture", "Algo & Maths"],
         link: "https://www.univ-brest.fr/fr",
-        media: "./images/logos/ubo_logo_white.png",
+        media: "./images/logos/ubo_logo_white.webp",
         date: "2020 - 2023",
     },
 ];

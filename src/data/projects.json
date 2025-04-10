@@ -54,7 +54,7 @@
       "id": "2",
       "title": "Red Pandas",
       "tags": ["C++", "Unreal Engine"],
-      "image": "./images/the_red_pandas.webp",
+      "image": "./images/projects/TheRedPandas/the_red_pandas.webp",
       "short_description": "Course project of Massively Multiplayer Online Role Play Game (MMORPG) prototype using Unreal and C++.",
       "duration": "Ongoing project",
       "team_size": "2 developers",
@@ -138,7 +138,7 @@
       "id": "4",
       "title": "Chev's Quest",
       "tags": ["C#", "Unity"],
-      "image": "./images/chevs_quest.png",
+      "image": "./images/projects/ChevsQuest/chevs_quest.webp",
       "short_description": "A tiny Point & Click adventure taking place in European medieval eras, with various videogame references.",
       "duration": "3 months",
       "team_size": "1 developer",
@@ -175,7 +175,7 @@
       "id": "5",
       "title": "Percival Engine",
       "tags": ["C++", "Vulkan"],
-      "image": "./images/percival_engine.png",
+      "image": "./images/Projects/PercivalEngine/percival_engine.webp",
       "short_description": "A project to learn about Engine Programming in C++ using the Vulkan graphics API.",
       "duration": "Ongoing Project",
       "team_size": "1 developer",
@@ -201,7 +201,7 @@
         {
           "name": "Rendering a Triangle",
           "description": "The first step in the graphics pipeline is to render a triangle. This involves setting up the graphics pipeline, creating a window, and rendering a triangle to the screen.",
-          "media": "./images/percival_engine.png"
+          "media": "./images/Projects/PercivalEngine/percival_engine.webp"
         },
         {
           "name": "Color and position translations",
@@ -216,7 +216,7 @@
         {
           "name": "Gravity System",
           "description": "The next step is to add a gravity system to the triangle. This involves creating a gravity vector and using it to update the triangle's position over time.",
-          "media": "./images/comming_soon.webp"
+          "media": null
         }
       ],
       "key_points": [
