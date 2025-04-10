@@ -1,7 +1,7 @@
 export default function TechnicalExperience() {
   return (
       <div>
-          <h1 className="mb-2">Technical Experience</h1>
+          <h1 className="mb-2">I Work With</h1>
           <div className="flex flex-wrap gap-2">
               <div className="tech-tag">
                   C++
@@ -25,7 +25,7 @@ export default function TechnicalExperience() {
                   Perforce
               </div>
               <div className="tech-tag">
-                  Rider
+                  React / Next.js
               </div>
           </div>
       </div>
