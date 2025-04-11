@@ -14,3 +14,25 @@
         column-count: 3;
     }
 }
+
+.lang-toggle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.lang-toggle .np {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lang-toggle:hover .en {
+    opacity: 0;
+}
+
+.lang-toggle:hover .np {
+    opacity: 1;
+}

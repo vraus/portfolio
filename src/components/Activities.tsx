@@ -16,7 +16,7 @@ const cards = [
         image: null,
     },
     {
-        title: " नेपालको सांस्कृतिक पर्व",
+        title: `<span class="lang-toggle"><span class="en">Cultural Festival of Nepal</span><span class="np"> नेपालको सांस्कृतिक पर्व</span></span>`,
         description: "Every year, I volunteer at the <strong><a href='https://maisonculturelledunepal.com' target='_blank'>Cultural Festival of Nepal</a></strong> in Paris.",
         image: null,
     },
@@ -62,7 +62,7 @@ export default function Activities() {
                             </div>
                         )}
                         <div className="p-4">
-                            <h2 className="text-xl font-semibold text-primary mb-2">{card.title}</h2>
+                            <h2 className="text-xl font-semibold text-primary mb-2" dangerouslySetInnerHTML={{ __html: card.title }}></h2>
                             <p
                                 className="text-sm text-muted"
                                 dangerouslySetInnerHTML={{ __html: card.description }}

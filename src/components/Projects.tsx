@@ -31,7 +31,7 @@ export default function Projects() {
 
   return (
     <div>
-      <h1 className="mb-4">Projects</h1>
+      <h1 className="mb-4 gradient-text">Projects</h1>
       <FilterButtons tags={tags} activeFilter={filter} setFilter={setFilter} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-16 mt-4">
