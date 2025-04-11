@@ -2,40 +2,42 @@
 
 import Image from "next/image";
 import "../styles/masonry.css";
+import React from "react";
 
 const cards = [
     {
-        title: "Musique",
-        description: "Je joue du piano et compose régulièrement.",
+        title: "Music",
+        description: "I've been playing the <strong>guitar and saxophone</strong> since I was a kid. Lately, I’ve fallen in love with the <strong>bass guitar</strong>, and I hope to take double bass lessons one day. <br/><br/>I also started experimenting with <strong>Ableton</strong> — it's been a lot of fun.",
         image: null,
     },
     {
-        title: "Jeux vidéo",
-        description: "Fan de RPG, roguelike et jeux tactiques.",
+        title: "Video Games",
+        description: "I'm obviously a gamer, and I love all kinds of games — from RTS to turn-based RPGs, roguelikes, roguelites... you name it.",
         image: null,
     },
     {
-        title: "Voyages",
-        description: "Découverte de nouveaux paysages et cultures à travers l’Europe et le Canada.",
+        title: " नेपालको सांस्कृतिक पर्व",
+        description: "Every year, I volunteer at the <strong><a href='https://maisonculturelledunepal.com' target='_blank'>Cultural Festival of Nepal</a></strong> in Paris.",
         image: null,
     },
     {
-        title: "Lecture",
+        title: "Game of the moment",
         description:
-            "Science-fiction, fantasy, essais tech, philosophie et tout ce qui pousse à réfléchir.",
+            "I'm currently going through my first Elden Ring run, and it's an absolute delight.<br/>Last defeated boss: <strong>The Fire Giant.</strong>💪🔥",
+        image: "./images/games/eldenring.webp",
+    },
+    {
+        title: "Game Development",
+        description: "As a passionate video game developer, I love challenging myself with creative projects. Whether it’s a <strong>game, a procedural generation algorithm in pure C++, or even a game engine</strong>, coding is a huge part of both my life and my free time.",
         image: null,
     },
     {
-        title: "Photographie",
-        description: "Photos de rue et paysages avec un hybride Fuji.",
-        image: null,
-    },
-    {
-        title: "Modélisation 3D",
-        description: "J’apprends Blender pour créer mes propres assets de jeu.",
+        title: "Hikes",
+        description: "Pretty self-explanatory — I’m not much of a sports guy, but hiking has always been my favorite way to get some <strong>fresh air and reset.</strong>",
         image: null,
     },
 ];
+
 
 export default function Activities() {
     return (
@@ -61,7 +63,10 @@ export default function Activities() {
                         )}
                         <div className="p-4">
                             <h2 className="text-xl font-semibold text-primary mb-2">{card.title}</h2>
-                            <p className="text-muted text-sm">{card.description}</p>
+                            <p
+                                className="text-sm text-muted"
+                                dangerouslySetInnerHTML={{ __html: card.description }}
+                            />
                         </div>
                     </div>
                 ))}

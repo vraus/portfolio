@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import "../styles/masonry.css";
+import React from "react";
 
 type Game = {
     title: string;
@@ -13,17 +14,17 @@ const games: Game[] = [
     {
         title: "Age Of Empire II",
         image: "./images/games/aoeii.webp",
-        description: "\"Age of Empires II\" was my inaugural gaming experience, and I still return to it, especially after the fourth installment's focus on historical accuracy. Beyond the strategic challenge, what captivates me is the franchise's immersive journey through different historical eras."
+        description: "<strong>\"Age of Empires II\"</strong> was my inaugural gaming experience, and I still return to it, especially after the fourth installment's focus on <strong>historical accuracy</strong>. <br/><br/>Beyond the strategic challenge, what captivates me is the franchise's immersive journey through different <strong>historical eras.</strong>"
     },
     {
         title: "Risk Of Rain II",
         image: "./images/games/ror2.webp",
-        description: "I'm drawn to Rogue-Like games, and 'Risk of Rain II' has truly captured my attention. Its seamless fusion of accessibility with high-octane gameplay is outstanding. The interplay of character abilities and item combinations offers a gratifying array of build options, ensuring each run is a unique journey. Whether solo or with friends, the enjoyment remains undiminished.",
+        description: "I'm drawn to Rogue-Like games, and <strong>'Risk of Rain II'</strong> has truly captured my attention.<br/><br/>Its seamless fusion of accessibility with high-octane gameplay is outstanding. The interplay of character abilities and item combinations offers a <strong>gratifying array of build options</strong>, ensuring each run is a unique journey.<br/><br/>Whether solo or with friends, the enjoyment remains <strong>undiminished</strong>.",
     },
     {
         title: "Divinity: Original Sin II",
         image: "./images/games/dos2.webp",
-        description: "'Divinity: Original Sin II' is my standout find of the year, captivating me with its compelling narrative, captivating music, and immersive gameplay. The meticulously crafted characters, intricate storylines, and player-driven world left a profound impression. As a devoted RPG enthusiast, I reveled in exploring its vast universe, uncovering the complex relationships within my party and the vibrant NPCs that bring this world to life.",
+        description: "<strong>'Divinity: Original Sin II'</strong> is my standout find of 2022, captivating me with its compelling narrative, <strong>captivating music</strong>, and immersive gameplay. The meticulously crafted characters, intricate storylines, and player-driven world left a profound impression.<br/><br/>As a devoted RPG enthusiast, I reveled in exploring its <strong>vast universe</strong>, uncovering the complex relationships within my party and the vibrant NPCs that bring this world to life.",
     },
 ];
 
@@ -50,7 +51,10 @@ export default function GamesThatMadeMe() {
                             <h2 className="text-2xl font-bold text-primary mb-4">
                                 {game.title}
                             </h2>
-                            <p className="text-muted text-sm flex-1 ">{game.description}</p>
+                            <p
+                                className="text-muted text-sm flex-1 "
+                                dangerouslySetInnerHTML={{ __html: game.description }}
+                            />
                         </div>
                     </div>
                 ))}
