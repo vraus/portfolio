@@ -175,7 +175,7 @@
       "id": "5",
       "title": "Percival Engine",
       "tags": ["C++", "Vulkan"],
-      "image": "./images/Projects/PercivalEngine/percival_engine.webp",
+      "image": "./images/projects/PercivalEngine/percival_engine.webp",
       "short_description": "A project to learn about Engine Programming in C++ using the Vulkan graphics API.",
       "duration": "Ongoing Project",
       "team_size": "1 developer",
@@ -201,7 +201,7 @@
         {
           "name": "Rendering a Triangle",
           "description": "The first step in the graphics pipeline is to render a triangle. This involves setting up the graphics pipeline, creating a window, and rendering a triangle to the screen.",
-          "media": "./images/Projects/PercivalEngine/percival_engine.webp"
+          "media": "./images/projects/PercivalEngine/percival_engine.webp"
         },
         {
           "name": "Color and position translations",
