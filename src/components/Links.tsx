@@ -8,7 +8,7 @@ export default function Links() {
   const links = [
     {
       name: "Resume",
-      href: "./portfolio_cv.pdf",
+      href: "./CV_PORTFOLIO.pdf",
       logo: "./images/logos/resume_logo.webp",
     },
     {
