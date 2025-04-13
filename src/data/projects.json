@@ -77,17 +77,17 @@
         {
           "name": "Combat System",
           "description": "With Character Health and attacks components, Punch Animation and damage hitbox, Damage type and reaction type control with data structure. I also made sur it was and easy-to-attach to new characters as it's a component-based system.",
-          "media": "./images/comming_soon.webp"
+          "media": "./webms/TheRedPandas/trp_combat_system.webm"
         },
         {
           "name": "Dialogue System",
           "description": "Player interaction with NPCs, using a data structure to manage the dialogues and the possible answers. I also made sure it was easy to add new dialogues to NPCs also using a component-based system.",
-          "media": "./images/comming_soon.webp"
+          "media": "./webms/TheRedPandas/trp_dialogue_system.webm"
         },
         {
           "name": "AIs",
           "description": "For various ennemies behaviors and interactions with the player. I used the Behavior Tree system in Unreal Engine to manage the AI behaviors and their interactions with the player.",
-          "media": "./images/comming_soon.webp"
+          "media": "./webms/TheRedPandas/trp_ais.webm"
         }
       ],
       "key_points": []
@@ -166,7 +166,7 @@
         {
           "name": "Sound Design",
           "description": "Using built-in sound management in Unity. Background music, sound effects, and ambiance. Plus a menu to manage the volume levels.",
-          "media": "./images/comming_soon.webp"
+          "media": null
         }
       ],
       "key_points": []
