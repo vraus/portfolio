@@ -1,6 +1,54 @@
 {
   "projects": [
     {
+      "id": "6",
+      "title": "Fly Me To The Room",
+      "tags": ["Unreal Engine", "Ableton", "Game Jam"],
+      "image": "./images/Projects/FlyMeToTheRoom/flymetotheroom.webp",
+      "short_description": "A Game Jam project for the DTJ#13 Anniversary Edition on Itch.io !",
+      "duration": "36 Hours",
+      "team_size": "3 developer",
+      "language": "Unreal Engine 5",
+      "date": "2025",
+      "role": "Game Developper & Sound Design",
+      "project_type": "Course Project",
+      "links": {
+        "source_code": "https://github.com/vraus/FlyMeToTheRoom",
+        "itch_io": "https://vraus.itch.io/fly-me-to-the-room",
+        "youtube": ["https://youtu.be/cltRaqTl5Mg"]
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["Blueprints", "Ableton", "GitHub"]
+      },
+      "description": [
+        "This project was a <a href='https://itch.io/jam/dtj36-13/rate/3511486' target='_blank'>submission</a> for the <a href='https://itch.io/jam/dtj36-13' target='_blank'>Devs That Jam #13</a>, a 36-hour game jam with the theme \"One Room\".",
+        "We decided to put the player in the role of a fly exploring a single room that feels enormous from its perspective. The goal is to find other flies scattered around the space and rescue those trapped in fly traps — whether set by humans or predators — so that they can all escape the house together.",
+        "Our team of three tackled this challenge over a weekend:",
+        "– <a href='https://www.linkedin.com/in/deryne-four/' target='_blank'>ChevRubis</a> – Game Developer<br/>– <a href='https://www.linkedin.com/in/pierre-louis-bouchez' target='_blank'>Paouis</a> – 3D Environment & Level Designer, Asset Creation<br/>– Myself – Game Developer & Sound Designer"
+      ],
+      "contributions": "As for my contributions to the Game Development, I focused primarily on designing the fly controller to make movement feel responsive, fun, and truly immersive — so the player really feels like a fly. I also co-developed the core gameplay loop alongside ChevRubis and assisted with the implementation of various other features.<br/><br/>On the audio side, I created a cover of Fly Me to the Moon (Frank Sinatra) using Ableton, but in a more goofy style, and composed both the victory and game over sound effects.",
+      "features": [
+        {
+          "name": "Fly Controller",
+          "description": null,
+          "media": "./images/Projects/FlyMeToTheRoom/oOlOzc.webp"
+        },
+        {
+          "name": "Flies to rescue",
+          "description": null,
+          "media": "./images/Projects/FlyMeToTheRoom/Um_6rB.webp"
+        },
+        {
+          "name": "Traps",
+          "description": null,
+          "media": "./images/Projects/FlyMeToTheRoom/VoX9X-.webp"
+        }
+      ],
+      "key_points": [
+      ]
+    },
+    {
       "id": "1",
       "tags": ["C++", "Unreal Engine"],
       "title": "Steering Lab",
