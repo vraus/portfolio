@@ -102,7 +102,7 @@
       "id": "2",
       "title": "Red Pandas",
       "tags": ["C++", "Unreal Engine"],
-      "image": "./images/projects/TheRedPandas/the_red_pandas.webp",
+      "image": "./images/projects/TheRedPandas/theredpandas.webp",
       "short_description": "Course project of Massively Multiplayer Online Role Play Game (MMORPG) prototype using Unreal and C++.",
       "duration": "Ongoing project",
       "team_size": "2 developers",
