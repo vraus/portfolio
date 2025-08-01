@@ -4,7 +4,7 @@
       "id": "2",
       "title": "Terra Regina",
       "tags": ["C++", "Unreal Engine"],
-      "image": "./webms/TerraRegina/TerraRegina_Showcase.webm",
+      "image": "./webms/terraregina/terraregina_showcase.webm",
       "short_description": "Solo project C++ prototype for Multiplayer Combat System with AIs",
       "duration": "2 weeks",
       "team_size": "Solo",
@@ -27,37 +27,37 @@
         {
           "name": "Combat System",
           "description": "Simple combat system with an animated basic attack and VFX, HealthComponent for both players and AIs, death and damage handlers...",
-          "media": "./webms/TerraRegina/TerraRegina_CombatSystem.webm"
+          "media": "./webms/terraregina/terraregina_combatsystem.webm"
         },
         {
           "name": "Replication",
           "description": "Everything relevant is replicated to all clients through the Server: animations, VFX, ragdolls, damages, etc...",
-          "media": "./webms/TerraRegina/TerraRegina_Replicated.webm"
+          "media": "./webms/terraregina/terraregina_replicated.webm"
         },
         {
           "name": "Replicated Combat System",
           "description": "The AIs can sense any player and attack it. Animations, damages etc... are always replicated on every clients, and AIs are handled by the server.",
-          "media": "./webms/TerraRegina/TerraRegina_MultiplayerCombat.webm"
+          "media": "./webms/terraregina/terraregina_multiplayercombat.webm"
         },
         {
           "name": "AI Sense System",
           "description": "AIs have a perception component initialized using C++ DataAssets. They use sight has primary sense and have hearing and damage sense too.",
-          "media": "./webms/TerraRegina/TerraRegina_AISenses.webm"
+          "media": "./webms/terraregina/terraregina_aisenses.webm"
         },
         {
           "name": "Block System",
           "description": "Blocking System with Idle animation, and react animation. Also replicated.",
-          "media": "./webms/TerraRegina/TerraRegina_BlockSystem.webm"
+          "media": "./webms/terraregina/terraregina_blocksystem.webm"
         },
         {
           "name": "EQS Cover",
           "description": "AIs use Environment Query System (EQS) to determine some positions in the world based on certain conditions. Here, they take cover when they are low on health.",
-          "media": "./webms/TerraRegina/TerraRegina_EQSCover.webm"
+          "media": "./webms/terraregina/terraregina_eqscover.webm"
         },
         {
           "name": "AI-Type Based EQS",
           "description": "Also with EQS, ranged enemies are able to find an optimal position to attack the target, and a melee enemy will strafe around the player between each round of assault.",
-          "media": "./webms/TerraRegina/TerraRegina_AITypeBasedEQS.webm"
+          "media": "./webms/terraregina/terraregina_aitypebasedeqs.webm"
         }
       ],
       "key_points": ["Planning AI behaviors early is essential for smooth development", "Using EQS makes AI feel smarter and more reactive"]
@@ -66,7 +66,7 @@
       "id": "6",
       "title": "Fly Me To The Room",
       "tags": ["Unreal Engine", "Ableton", "Game Jam"],
-      "image": "./images/Projects/FlyMeToTheRoom/flymetotheroom.webp",
+      "image": "./images/projects/flymetotheroom/flymetotheroom.webp",
       "short_description": "A Game Jam project for the DTJ#13 Anniversary Edition on Itch.io !",
       "duration": "36 Hours",
       "team_size": "3 developers",
@@ -94,17 +94,17 @@
         {
           "name": "Fly Controller",
           "description": null,
-          "media": "./images/Projects/FlyMeToTheRoom/oOlOzc.webp"
+          "media": "./images/projects/flymetotheroom/oOlOzc.webp"
         },
         {
           "name": "Flies to rescue",
           "description": null,
-          "media": "./images/Projects/FlyMeToTheRoom/Um_6rB.webp"
+          "media": "./images/projects/flymetotheroom/Um_6rB.webp"
         },
         {
           "name": "Traps",
           "description": null,
-          "media": "./images/Projects/FlyMeToTheRoom/VoX9X-.webp"
+          "media": "./images/projects/flymetotheroom/VoX9X-.webp"
         }
       ],
       "key_points": [
@@ -114,7 +114,7 @@
       "id": "1",
       "tags": ["C++", "Unreal Engine"],
       "title": "Steering Lab",
-      "image": "./webms/SteeringLab/SeekFleeArrival.webm",
+      "image": "./webms/steeringlab/seekfleearrival.webm",
       "short_description": "Course project about AI in Games. Using C++ in Unreal, reproducing the steering of a controlled Pawn.",
       "duration": "5 months",
       "team_size": "Solo",
@@ -140,31 +140,73 @@
         {
           "name": "Seek / Flee / Arrival",
           "description": "Moving toward and away from a Target without anticipation for stop, and Arrival stops the agent upon reaching the destination point.",
-          "media": "./webms/SteeringLab/SeekFleeArrival.webm"
+          "media": "./webms/steeringlab/seekfleearrival.webm"
         },
         {
           "name": "Pursuit / Evade",
           "description": "Moves toward or away from a moving Target with anticipation, predicting its path to chase or avoid efficiently.",
-          "media": "./webms/SteeringLab/PursuitEvade.webm"
+          "media": "./webms/steeringlab/pursuitevade.webm"
         },
         {
           "name": "Paths Behaviors",
           "description": "Defines how the agent follows a path: looping back, stopping at the end, or reversing direction to return to the start position.",
-          "media": "./webms/SteeringLab/PathBehaviors.webm"
+          "media": "./webms/steeringlab/pathbehaviors.webm"
         },
         {
           "name": "Path Finding / Avoidance",
           "description": "Path finding (A*) using SteeringLab code base for multiple agent to go back and forth between Targets and initial point.",
-          "media": "./webms/SteeringLab/PathFinding.webm"
+          "media": "./webms/steeringlab/pathfinding.webm"
         }
       ],
       "key_points": []
     },
     {
+      "id": "3",
+      "title": "Wwisard",
+      "tags": ["C++", "Unreal Engine"],
+      "image": "./webms/wwisard/wwisardgameplay.webm",
+      "short_description": "Single-Player Mini-FPS as a first approach to WWise integration in Unreal Engine 5 and Sound Programmation.",
+      "duration": "3 months",
+      "team_size": "1 developer",
+      "language": "Unreal / C++",
+      "date": "2024",
+      "role": "Game Developper",
+      "project_type": "Personnal Project",
+      "links": {
+        "source_code": "https://github.com/vraus/Wwisard",
+        "itch_io": null,
+        "youtube": ["https://youtu.be/03hS-5pdrZ8"]
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["C++", "Blueprints", "Wwise"]
+      },
+      "description": ["I recently discovered how to integrate sounds dynamically and link them to gameplay using Wwise, and I wanted to practice with a simple gameplay project where I could experiment with the parameters and possibilities offered by this software." ," Since that project, I’ve been integrating Wwise into my other projects to plan audio programming, and I find this software very comprehensive and enjoyable to work with. The integration with Unreal is quite straightforward and well-documented."],
+      "contributions": "These features reflects what I learned doing this project.",
+      "features": [
+        {
+          "name": "3D Sound Integration",
+          "description": "Using Wwise integration plugin in Unreal Engine to simulate 3D sound propagation.",
+          "media": "./webms/wwisard/wwisardgameplay.webm"
+        },
+        {
+          "name": "Control Menu",
+          "description": "A simple UI menu used to control sound volume with detached buses in Wwise.",
+          "media": "./webms/wwisard/wwisardmenu.webm"
+        }
+      ],
+      "key_points": [
+        "Wwise integration in Unreal Engine 5",
+        "Basic Sound Programmation",
+        "Exploring Immersive Sound",
+        "Having fun with Sound Design and Programming"
+      ]
+    },
+    {
       "id": "4",
       "title": "Chev's Quest",
       "tags": ["C#", "Unity"],
-      "image": "./images/projects/ChevsQuest/chevs_quest.webp",
+      "image": "./images/projects/chevsquest/chevs_quest.webp",
       "short_description": "A tiny Point & Click adventure taking place in European medieval eras, with various videogame references.",
       "duration": "3 months",
       "team_size": "Solo",
@@ -187,12 +229,12 @@
         {
           "name": "Dialogues",
           "description": "Character dialogues using the Ink Plugin in Unity.",
-          "media": "./images/comming_soon.webp"
+          "media": null
         },
         {
           "name": "Sound Design",
           "description": "Using built-in sound management in Unity. Background music, sound effects, and ambiance. Plus a menu to manage the volume levels.",
-          "media": "./images/comming_soon.webp"
+          "media": null
         }
       ],
       "key_points": []
@@ -201,7 +243,7 @@
       "id": "5",
       "title": "Percival Engine",
       "tags": ["C++", "Vulkan"],
-      "image": "./images/Projects/PercivalEngine/percival_engine.webp",
+      "image": "./images/projects/percivalengine/percival_engine.webp",
       "short_description": "A project to learn about Engine Programming in C++ using the Vulkan graphics API.",
       "duration": "Ongoing Project",
       "team_size": "Solo",
@@ -227,17 +269,17 @@
         {
           "name": "Rendering a Triangle",
           "description": "The first step in the graphics pipeline is to render a triangle. This involves setting up the graphics pipeline, creating a window, and rendering a triangle to the screen.",
-          "media": "./images/Projects/PercivalEngine/percival_engine.webp"
+          "media": "./images/projects/percivalengine/percival_engine.webp"
         },
         {
           "name": "Color and position translations",
           "description": "The next step is to add color and position translations to the triangle. This involves creating a vertex buffer and a color buffer using shader code, and then using them to render the triangle.",
-          "media": "./webms/PercivalEngine/position_color_translation.webm"
+          "media": "./webms/percivalengine/position_color_translation.webm"
         },
         {
           "name": "Scale and Rotation Transformations",
           "description": "The next step is to add scale and rotation transformations to the triangle. This involves creating a transformation matrix and using it to transform the triangle's vertices.",
-          "media": "./webms/PercivalEngine/rotation_scale_translation.webm"
+          "media": "./webms/percivalengine/rotation_scale_translation.webm"
         }, 
         {
           "name": "Gravity System",
