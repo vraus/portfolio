@@ -1,17 +1,79 @@
 {
   "projects": [
     {
+      "id": "2",
+      "title": "Terra Regina",
+      "tags": ["C++", "Unreal Engine"],
+      "image": "./webms/TerraRegina/TerraRegina_Showcase.webm",
+      "short_description": "Solo project C++ prototype for Multiplayer Combat System with AIs",
+      "duration": "2 weeks",
+      "team_size": "Solo",
+      "language": "Unreal / C++",
+      "date": "2025",
+      "role": "Game Developer",
+      "project_type": "Solo Project",
+      "links": {
+        "source_code": null,
+        "itch_io": "https://vraus.itch.io/terra-regina",
+        "youtube": ["https://www.youtube.com/watch?v=fbt99PhCYyI"]
+      },
+      "technologies": {
+        "engine": "Unreal Engine",
+        "languages": ["C++", "Blueprints", "Perforce"]
+      },
+      "description": ["This project is a <strong>multiplayer combat system</strong> built entirely in <strong>C++ in Unreal Engine 5</strong>.", "It’s a personal prototype made in about <strong>two weeks</strong> to experiment with multiplayer gameplay and advanced <strong>AI behaviors</strong>."],
+      "contributions": "This project is very comprehensive and has allowed me to work on multiple aspects of developing a large-scale game while considering its networking components and scalability. My first contribution to this project was to integrate the versioning using Perforce, including the setup of a server to host the Perforce Server. I've also worked on the following Gameplay features.",
+      "features": [
+        {
+          "name": "Combat System",
+          "description": "Simple combat system with an animated basic attack and VFX, HealthComponent for both players and AIs, death and damage handlers...",
+          "media": "./webms/TerraRegina/TerraRegina_CombatSystem.webm"
+        },
+        {
+          "name": "Replication",
+          "description": "Everything relevant is replicated to all clients through the Server: animations, VFX, ragdolls, damages, etc...",
+          "media": "./webms/TerraRegina/TerraRegina_Replicated.webm"
+        },
+        {
+          "name": "Replicated Combat System",
+          "description": "The AIs can sense any player and attack it. Animations, damages etc... are always replicated on every clients, and AIs are handled by the server.",
+          "media": "./webms/TerraRegina/TerraRegina_MultiplayerCombat.webm"
+        },
+        {
+          "name": "AI Sense System",
+          "description": "AIs have a perception component initialized using C++ DataAssets. They use sight has primary sense and have hearing and damage sense too.",
+          "media": "./webms/TerraRegina/TerraRegina_AISenses.webm"
+        },
+        {
+          "name": "Block System",
+          "description": "Blocking System with Idle animation, and react animation. Also replicated.",
+          "media": "./webms/TerraRegina/TerraRegina_BlockSystem.webm"
+        },
+        {
+          "name": "EQS Cover",
+          "description": "AIs use Environment Query System (EQS) to determine some positions in the world based on certain conditions. Here, they take cover when they are low on health.",
+          "media": "./webms/TerraRegina/TerraRegina_EQSCover.webm"
+        },
+        {
+          "name": "AI-Type Based EQS",
+          "description": "Also with EQS, ranged enemies are able to find an optimal position to attack the target, and a melee enemy will strafe around the player between each round of assault.",
+          "media": "./webms/TerraRegina/TerraRegina_AITypeBasedEQS.webm"
+        }
+      ],
+      "key_points": ["Planning AI behaviors early is essential for smooth development", "Using EQS makes AI feel smarter and more reactive"]
+    },
+    {
       "id": "6",
       "title": "Fly Me To The Room",
       "tags": ["Unreal Engine", "Ableton", "Game Jam"],
-      "image": "./images/projects/FlyMeToTheRoom/flymetotheroom.webp",
+      "image": "./images/Projects/FlyMeToTheRoom/flymetotheroom.webp",
       "short_description": "A Game Jam project for the DTJ#13 Anniversary Edition on Itch.io !",
       "duration": "36 Hours",
-      "team_size": "3 developer",
+      "team_size": "3 developers",
       "language": "Unreal Engine 5",
       "date": "2025",
       "role": "Game Developper & Sound Design",
-      "project_type": "Course Project",
+      "project_type": "Game Jam",
       "links": {
         "source_code": "https://github.com/vraus/FlyMeToTheRoom",
         "itch_io": "https://vraus.itch.io/fly-me-to-the-room",
@@ -32,17 +94,17 @@
         {
           "name": "Fly Controller",
           "description": null,
-          "media": "./images/projects/FlyMeToTheRoom/flyone.webp"
+          "media": "./images/Projects/FlyMeToTheRoom/oOlOzc.webp"
         },
         {
           "name": "Flies to rescue",
           "description": null,
-          "media": "./images/projects/FlyMeToTheRoom/flytwo.webp"
+          "media": "./images/Projects/FlyMeToTheRoom/Um_6rB.webp"
         },
         {
           "name": "Traps",
           "description": null,
-          "media": "./images/projects/FlyMeToTheRoom/flythree.webp"
+          "media": "./images/Projects/FlyMeToTheRoom/VoX9X-.webp"
         }
       ],
       "key_points": [
@@ -55,10 +117,10 @@
       "image": "./webms/SteeringLab/SeekFleeArrival.webm",
       "short_description": "Course project about AI in Games. Using C++ in Unreal, reproducing the steering of a controlled Pawn.",
       "duration": "5 months",
-      "team_size": "1 developer",
+      "team_size": "Solo",
       "language": "Unreal / C++",
       "date": "2025",
-      "role": "Game Developper",
+      "role": "Game Developer",
       "project_type": "Course Project",
       "links": {
         "source_code": "https://github.com/vraus/Steering_Lab",
@@ -99,97 +161,13 @@
       "key_points": []
     },
     {
-      "id": "2",
-      "title": "Red Pandas",
-      "tags": ["C++", "Unreal Engine"],
-      "image": "./images/projects/TheRedPandas/theredpandas.webp",
-      "short_description": "Course project of Massively Multiplayer Online Role Play Game (MMORPG) prototype using Unreal and C++.",
-      "duration": "Ongoing project",
-      "team_size": "2 developers",
-      "language": "Unreal / C++",
-      "date": "2024",
-      "role": "Game Developper",
-      "project_type": "Course Project",
-      "links": {
-        "source_code": null,
-        "itch_io": null,
-        "youtube": null
-      },
-      "technologies": {
-        "engine": "Unreal Engine",
-        "languages": ["C++", "Blueprints", "Perforce"]
-      },
-      "description": ["Collaborative Project in Pairs, prototyping an MMORPG with Classic Core MMO Mechanics such as Combat and Health system, Level progression and abilities to unlock, Inventory and equipment management, Dialogue and quest systems, Monster aggression zones"],
-      "contributions": "This project is very comprehensive and has allowed me to work on multiple aspects of developing a large-scale game while considering its networking components and scalability. My first contribution to this project was to integrate the versioning using Perforce, including the setup of a server to host the Perforce Server. To date, I have worked on the following features.",
-      "features": [
-        {
-          "name": "Combat System",
-          "description": "With Character Health and attacks components, Punch Animation and damage hitbox, Damage type and reaction type control with data structure. I also made sur it was and easy-to-attach to new characters as it's a component-based system.",
-          "media": "./webms/TheRedPandas/trp_combat_system.webm"
-        },
-        {
-          "name": "Dialogue System",
-          "description": "Player interaction with NPCs, using a data structure to manage the dialogues and the possible answers. I also made sure it was easy to add new dialogues to NPCs also using a component-based system.",
-          "media": "./webms/TheRedPandas/trp_dialogue_system.webm"
-        },
-        {
-          "name": "AIs",
-          "description": "For various ennemies behaviors and interactions with the player. I used the Behavior Tree system in Unreal Engine to manage the AI behaviors and their interactions with the player.",
-          "media": "./webms/TheRedPandas/trp_ais.webm"
-        }
-      ],
-      "key_points": []
-    },
-    {
-      "id": "3",
-      "title": "Wwisard",
-      "tags": ["C++", "Unreal Engine"],
-      "image": "./webms/Wwisard/WwisardGameplay.webm",
-      "short_description": "Single-Player Mini-FPS as a first approach to WWise integration in Unreal Engine 5 and Sound Programmation.",
-      "duration": "3 months",
-      "team_size": "1 developer",
-      "language": "Unreal / C++",
-      "date": "2024",
-      "role": "Game Developper",
-      "project_type": "Personnal Project",
-      "links": {
-        "source_code": "https://github.com/vraus/Wwisard",
-        "itch_io": null,
-        "youtube": ["https://youtu.be/03hS-5pdrZ8"]
-      },
-      "technologies": {
-        "engine": "Unreal Engine",
-        "languages": ["C++", "Blueprints", "Wwise"]
-      },
-      "description": ["I recently discovered how to integrate sounds dynamically and link them to gameplay using Wwise, and I wanted to practice with a simple gameplay project where I could experiment with the parameters and possibilities offered by this software." ," Since that project, I’ve been integrating Wwise into my other projects to plan audio programming, and I find this software very comprehensive and enjoyable to work with. The integration with Unreal is quite straightforward and well-documented."],
-      "contributions": "These features reflects what I learned doing this project.",
-      "features": [
-        {
-          "name": "3D Sound Integration",
-          "description": "Using Wwise integration plugin in Unreal Engine to simulate 3D sound propagation.",
-          "media": "./webms/Wwisard/WwisardGameplay.webm"
-        },
-        {
-          "name": "Control Menu",
-          "description": "A simple UI menu used to control sound volume with detached buses in Wwise.",
-          "media": "./webms/Wwisard/WwisardMenu.webm"
-        }
-      ],
-      "key_points": [
-        "Wwise integration in Unreal Engine 5",
-        "Basic Sound Programmation",
-        "Exploring Immersive Sound",
-        "Having fun with Sound Design and Programming"
-      ]
-    },
-    {
       "id": "4",
       "title": "Chev's Quest",
       "tags": ["C#", "Unity"],
       "image": "./images/projects/ChevsQuest/chevs_quest.webp",
       "short_description": "A tiny Point & Click adventure taking place in European medieval eras, with various videogame references.",
       "duration": "3 months",
-      "team_size": "1 developer",
+      "team_size": "Solo",
       "language": "Unity / C#",
       "date": "2024",
       "role": "Game Developper",
@@ -214,7 +192,7 @@
         {
           "name": "Sound Design",
           "description": "Using built-in sound management in Unity. Background music, sound effects, and ambiance. Plus a menu to manage the volume levels.",
-          "media": null
+          "media": "./images/comming_soon.webp"
         }
       ],
       "key_points": []
@@ -223,10 +201,10 @@
       "id": "5",
       "title": "Percival Engine",
       "tags": ["C++", "Vulkan"],
-      "image": "./images/projects/PercivalEngine/percival_engine.webp",
+      "image": "./images/Projects/PercivalEngine/percival_engine.webp",
       "short_description": "A project to learn about Engine Programming in C++ using the Vulkan graphics API.",
       "duration": "Ongoing Project",
-      "team_size": "1 developer",
+      "team_size": "Solo",
       "language": "C++",
       "date": "2024",
       "role": "Engine Developper",
@@ -249,7 +227,7 @@
         {
           "name": "Rendering a Triangle",
           "description": "The first step in the graphics pipeline is to render a triangle. This involves setting up the graphics pipeline, creating a window, and rendering a triangle to the screen.",
-          "media": "./images/projects/PercivalEngine/percival_engine.webp"
+          "media": "./images/Projects/PercivalEngine/percival_engine.webp"
         },
         {
           "name": "Color and position translations",
